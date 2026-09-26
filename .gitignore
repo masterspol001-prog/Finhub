@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.log
+.DS_Store
+.env
+
+# internal sales material - keep out of the public repo
+SALES-KIT.md
+outreach-templates.md
+lead-tracker.csv

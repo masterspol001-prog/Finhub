@@ -1,0 +1,20 @@
+{
+  "name": "FinHub",
+  "org": "FinHub Tools",
+  "url": "https://finhub-jet.vercel.app",
+  "logoMark": "",
+  "theme": {
+    "accent": "#6366f1",
+    "accent2": "#16a34a"
+  },
+  "footerBlurb": "Accurate, free and transparent finance calculators for investing, loans, retirement, savings and trading - built on published formulas with charts you can understand.",
+  "footerDisclaimer": "provides educational estimates for personal finance planning. Nothing here is financial, investment or tax advice. Figures are projections at the assumptions you choose and may not reflect actual returns or tax rules.",
+  "sales": {
+    "enabled": true,
+    "contactEmail": "masterpol001@gmail.com",
+    "contactWhatsapp": "",
+    "priceINR": "\u20B914,999",
+    "priceUSD": "$199",
+    "setupDays": "24 hours"
+  }
+}
