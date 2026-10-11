@@ -1,0 +1,22 @@
+{
+  "name": "finhub-finance-calculators",
+  "version": "1.0.0",
+  "description": "Premium finance calculator hub - accurate, SEO-optimized personal finance & investing calculators",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "node build.js",
+    "rebrand": "node scripts/rebrand.mjs brand.config.json --build",
+    "test": "node --test tests/engine.test.js tests/engine-p3.test.js tests/engine-regression.test.js tests/engine-tables.test.js tests/engine-decisions.test.js tests/engine-planners.test.js tests/engine-snapshot.test.js tests/engine-ask.test.js tests/plans.test.js",
+    "serve": "npx --yes serve dist -l 4173 --no-clipboard"
+  },
+  "keywords": [
+    "finance",
+    "calculator",
+    "sip",
+    "emi",
+    "cagr",
+    "compound-interest"
+  ],
+  "license": "MIT"
+}
