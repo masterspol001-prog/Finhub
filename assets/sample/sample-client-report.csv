@@ -1,0 +1,23 @@
+FinHub - Sample Client Report (SAMPLE / fictional data)
+Client,Sample Client
+Prepared by,Your Firm Name
+Note,Illustrative only. Not financial advice.
+
+Plan,Monthly SIP at 12% expected for 10 years
+Monthly investment,10000
+Result,Projected value,2323391
+Component,Amount invested,1200000
+Component,Est. returns,1123391
+Component,X of invested,2
+
+Year,Amount invested,Projected value
+1,120000,128093
+2,240000,272432
+3,360000,435076
+4,480000,618348
+5,600000,824864
+6,720000,1057570
+7,840000,1319790
+8,960000,1615266
+9,1080000,1948215
+10,1200000,2323391

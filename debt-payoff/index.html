@@ -1,0 +1,231 @@
+
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Debt Payoff Calculator - Months to Clear and Interest Cost</title>
+
+<meta name="description" content="See how long a debt takes to clear at your monthly payment, how much interest you pay, and how an extra payment speeds it up.">
+<link rel="canonical" href="https://finhub-jet.vercel.app/debt-payoff/">
+<meta name="theme-color" content="#6366f1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Debt Payoff Calculator - Months to Clear and Interest Cost">
+<meta property="og:description" content="See how long a debt takes to clear at your monthly payment, how much interest you pay, and how an extra payment speeds it up.">
+<meta property="og:url" content="https://finhub-jet.vercel.app/debt-payoff/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%236366f1'%2F%3E%3Ctext%20x%3D'32'%20y%3D'44'%20font-family%3D'Arial'%20font-size%3D'34'%20font-weight%3D'800'%20fill%3D'white'%20text-anchor%3D'middle'%3EF%3C%2Ftext%3E%3C%2Fsvg%3E">
+<link rel="apple-touch-icon" href="/icon.svg">
+<link rel="manifest" href="/manifest.webmanifest">
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Debt Payoff Calculator - Months to Clear and Interest Cost","description":"See how long a debt takes to clear at your monthly payment, how much interest you pay, and how an extra payment speeds it up.","url":"https://finhub-jet.vercel.app/debt-payoff/","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"author":{"@type":"Organization","name":"FinHub Tools"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What if my payment is less than the interest?","acceptedAnswer":{"@type":"Answer","text":"Then the balance never clears. The calculator warns you and you should raise the payment or lower the rate."}},{"@type":"Question","name":"Does extra payment go to principal or interest?","acceptedAnswer":{"@type":"Answer","text":"In this model the whole payment reduces the balance after interest is added, so extra payment shortens the term."}},{"@type":"Question","name":"Should I pay the highest rate first?","acceptedAnswer":{"@type":"Answer","text":"Paying the highest-rate debt first usually saves the most interest, an approach called the avalanche method."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://finhub-jet.vercel.app/"},{"@type":"ListItem","position":2,"name":"Debt Payoff Calculator","item":"https://finhub-jet.vercel.app/debt-payoff/"}]}</script>
+<link rel="stylesheet" href="/assets/css/styles.css">
+
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<p class="print-brand"><span class="print-brand__mark">F</span> FinHub</p>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="logo" href="/" aria-label="FinHub home"><span class="logo__mark">F</span><span class="logo__word">FinHub</span></a>
+      <nav class="nav-center" aria-label="Primary">
+        <a href="/dashboard/">Plan</a><a href="/#calculators">Calculators</a><a href="/#answers">Answers</a>
+      </nav>
+      <div class="header-right">
+        <button type="button" class="search-btn" data-cmdk-open aria-label="Search FinHub (press Control or Command K)">
+          <svg class="search-btn__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
+          <span class="search-btn__label">Search</span>
+          <kbd class="search-btn__kbd" aria-hidden="true">&#8984;K</kbd>
+        </button>
+        <a class="btn btn--primary btn--sm" href="/money-plan/">My plan</a>
+        <div class="nav-more" data-nav-more>
+          <button type="button" class="nav-more__btn" data-nav-menu aria-expanded="false" aria-haspopup="true">Menu <span aria-hidden="true">&#9662;</span></button>
+          <div class="nav-more__panel" data-nav-menu-panel hidden>
+            <a href="/money-plan/">Money plan</a><a href="/compare-decisions/">Compare decisions</a><a href="/monthly-review/">Monthly review</a><a href="/plan-report/">Financial report</a><a href="/net-worth/">Net worth</a><a href="/my-plans/">My plans</a><a href="/sell/">For advisers</a>
+          </div>
+        </div>
+        <button type="button" class="icon-btn" data-theme-toggle aria-label="Switch theme" title="Toggle dark / light mode">&#9680;</button>
+      </div>
+    </div>
+  </header>
+<main id="main">
+
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a><span aria-hidden="true">/</span><span>Debt Payoff Calculator</span>
+    </nav>
+    <section class="page-hero">
+      <span class="eyebrow">Loan Calculators</span>
+      <h1>Debt Payoff Calculator</h1>
+      <p>See how long a debt takes to clear at your monthly payment, how much interest you pay, and how an extra payment speeds it up.</p>
+    </section>
+
+    <div class="calc-grid">
+      <section class="card calc-form-card" aria-labelledby="form-title">
+        <h2 id="form-title">Your inputs</h2>
+        <div data-app-form aria-live="polite"></div>
+        <div class="form-actions">
+          <button type="button" class="btn btn--ghost" data-reset>Reset defaults</button>
+          <button type="button" class="btn btn--ghost" data-history-toggle aria-expanded="false">History</button>
+        </div>
+        <div class="card history-panel" data-history hidden aria-label="Saved calculations">
+          <div data-app-history></div>
+        </div>
+      </section>
+
+      <section class="card results-card" aria-labelledby="results-title">
+        <h2 id="results-title" class="sr-only">Results</h2>
+        <div class="toolbar">
+          <label class="sr-only" for="currency-select">Display currency</label>
+          <select id="currency-select" class="currency-sel" data-currency aria-label="Display currency">
+            <option value="INR">₹ INR · India</option><option value="USD">$ USD · United States</option><option value="GBP">£ GBP · United Kingdom</option><option value="CAD">C$ CAD · Canada</option><option value="AUD">A$ AUD · Australia</option><option value="AED">AED AED · United Arab Emirates</option><option value="SGD">S$ SGD · Singapore</option>
+          </select>
+          <span class="spacer"></span>
+          <button type="button" class="tool-btn" data-share title="Share a link with these numbers">Share</button>
+          <button type="button" class="tool-btn" data-copy title="Copy a text summary">Copy</button>
+          <button type="button" class="tool-btn" data-csv title="Download the results table as CSV">CSV</button>
+          <button type="button" class="tool-btn" data-print title="Print this result">Print</button>
+        </div>
+        
+        <div data-app-head></div>
+        <div data-app-stats></div>
+        <div data-app-charts></div>
+        <div data-app-table></div>
+        <div data-app-work></div>
+        <p class="note" data-app-note aria-live="polite"></p>
+
+      </section>
+    </div>
+
+    <div class="edu">
+      <h2>How the Debt Payoff Calculator works</h2>
+      <p>When you pay a fixed amount each month against a revolving or personal debt, the balance falls only as fast as the payment exceeds the interest.</p><p>This calculator simulates the month-by-month balance and reports how long the debt lasts and what it costs in interest.</p>
+
+      <section class="edu__section">
+        <h3>The formula behind it</h3>
+        <div class="formula-box">Each month: balance = balance x (1 + APR/12) - payment. The loop repeats until the balance reaches zero or the payment no longer covers the interest.</div>
+      </section>
+
+      <section class="edu__section">
+        <h3>How to use it - step by step</h3>
+        <ol><li>Enter the current balance.</li><li>Set the annual interest rate (APR).</li><li>Enter your regular monthly payment.</li><li>Add any extra monthly payment and see the months and interest drop.</li></ol>
+      </section>
+
+      <section class="edu__section">
+        <h3>Worked example</h3>
+        <div class="example-box"><strong>Example:</strong> A 2,00,000 balance at 15% APR with 8,000 a month clears in about 31 months and costs roughly 41,306 in interest.</div>
+      </section>
+
+      <section class="edu__section">
+        <h3>Related calculators</h3>
+        <ul class="related-list"><li><a href="/emi-loan/">EMI / Loan Calculator</a></li><li><a href="/credit-card-interest/">Credit Card Interest Calculator</a></li><li><a href="/loan-compare/">Loan Comparison Calculator</a></li></ul>
+      </section>
+
+      <section class="edu__section" aria-labelledby="next-title">
+        <h3 id="next-title">Where to go next</h3>
+        <ul class="journey-list">
+          <li><a href="/debt-planner/"><strong>Debt Payoff Planner</strong><span>Plan the payoff with extra payments</span></a></li><li><a href="/dashboard/"><strong>Financial Health Dashboard</strong><span>Check debt-to-income</span></a></li><li><a href="/savings-planner/"><strong>Savings Planner</strong><span>Find money to repay faster</span></a></li>
+        </ul>
+      </section>
+
+      <section class="edu__section">
+        <h3>Frequently asked questions</h3>
+        <div class="faq-list">
+    <details class="faq-item">
+      <summary>What if my payment is less than the interest?</summary>
+      <p>Then the balance never clears. The calculator warns you and you should raise the payment or lower the rate.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Does extra payment go to principal or interest?</summary>
+      <p>In this model the whole payment reduces the balance after interest is added, so extra payment shortens the term.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Should I pay the highest rate first?</summary>
+      <p>Paying the highest-rate debt first usually saves the most interest, an approach called the avalanche method.</p>
+    </details></div>
+      </section>
+
+      
+
+      <div class="disclosure">
+        <span class="disclosure__mark" aria-hidden="true">i</span>
+        <p>FinHub is an educational tool, not a financial adviser. Results are estimates based on the assumptions you enter and standard formulas; they do not guarantee outcomes, returns or tax treatment, and should not replace professional advice before you invest or borrow. All figures update instantly as you change your inputs.</p>
+      </div>
+    </div>
+  </div>
+  <script>window.FINHUB_PAGE = {"type":"calc","slug":"debt-payoff","premium":false};</script>
+</main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-statement">Your money.<br>Your next move.</p>
+      <div class="footer-inner">
+        <div class="footer-cols">
+          <div class="footer-brand">
+            <a class="logo" href="/"><span class="logo__mark">F</span><span class="logo__word">FinHub</span></a>
+            <p class="footer-blurb">Accurate, free and transparent finance calculators for investing, loans, retirement, savings and trading - built on published formulas with charts you can understand.</p>
+          </div>
+          <div>
+            <h4>Plan &amp; decide</h4>
+            <ul><li><a href="/money-plan/">I want a plan for my money</a></li><li><a href="/compare-decisions/">Help me choose between two options</a></li><li><a href="/monthly-review/">Keep my plan on track</a></li><li><a href="/plan-report/">Give me a written report</a></li><li><a href="/dashboard/">How am I doing financially?</a></li><li><a href="/goal-planner/">I have a goal to reach</a></li><li><a href="/retirement-planner/">Can I retire when I want to?</a></li><li><a href="/sip-compare/">Make my SIP better</a></li><li><a href="/what-if-lab/">What happens if...?</a></li><li><a href="/debt-planner/">When will I be debt-free?</a></li><li><a href="/emergency-fund-planner/">How big should my safety net be?</a></li><li><a href="/net-worth-tracker/">What is my net worth?</a></li><li><a href="/savings-planner/">Save more each month</a></li><li><a href="/my-plans/">My saved plans</a></li></ul>
+          </div>
+          <div>
+            <h4>Answers</h4>
+            <ul><li><a href="/how-much-sip-for-1-crore/">How much SIP do you need for ₹1 crore?</a></li><li><a href="/how-much-will-5000-sip-become/">How much will a ₹5,000 monthly SIP become?</a></li><li><a href="/sip-vs-lumpsum/">SIP vs lump sum: which invests better?</a></li><li><a href="/how-much-will-10000-sip-become/">How much will a ₹10,000 monthly SIP become?</a></li><li><a href="/how-to-reach-1-crore/">How to reach ₹1 crore: three routes</a></li><li><a href="/how-to-reach-50-lakh/">How to reach ₹50 lakh: three routes</a></li><li><a href="/sip-step-up-calculator/">SIP step-up calculator: how much does raising your SIP each year add?</a></li><li><a href="/inflation-adjusted-goal/">What will your goal cost after inflation?</a></li><li><a href="/emergency-fund-how-much/">How much emergency fund do you need?</a></li><li><a href="/savings-rate-calculator/">What does your savings rate do over time?</a></li><li><a href="/retirement-corpus-calculator/">How big a retirement corpus do you need?</a></li></ul>
+          </div>
+          <div>
+            <h4>Popular calculators</h4>
+            <ul><li><a href="/sip/">SIP Calculator</a></li><li><a href="/compound-interest/">Compound Interest Calculator</a></li><li><a href="/emi-loan/">EMI / Loan Calculator</a></li><li><a href="/retirement/">Retirement Calculator</a></li><li><a href="/fd/">FD Calculator</a></li><li><a href="/cagr/">CAGR Calculator</a></li></ul>
+          </div>
+          <div>
+            <h4>Browse by topic</h4>
+            <ul><li><a href="/#investment">Investment Calculators</a></li><li><a href="/#loan">Loan Calculators</a></li><li><a href="/#retirement">Retirement &amp; Goals</a></li><li><a href="/#savings">Savings Calculators</a></li><li><a href="/#tax">Tax &amp; Inflation</a></li><li><a href="/#trading">Stock &amp; Trading</a></li><li><a href="/#personal">Personal Finance</a></li><li><a href="/#business">Business &amp; Advisers</a></li></ul>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <ul>
+              <li><a href="/about/">About</a></li>
+              <li><a href="/how-it-works/">How it works</a></li>
+              <li><a href="/trust/">Trust &amp; security</a></li>
+              <li><a href="/support/">Support</a></li>
+              <li><a href="/privacy/">Privacy</a></li>
+              <li><a href="/terms/">Terms</a></li>
+              <li><a href="/sell/">For advisers</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer-adviser"><a href="/sell/">Are you an adviser or creator? Get this whole platform branded for your clients &rarr;</a></p>
+      </div>
+      <div class="footer-bottom">
+        <p>FinHub provides educational estimates for personal finance planning. Nothing here is financial, investment or tax advice. Figures are projections at the assumptions you choose and may not reflect actual returns or tax rules.</p>
+        <p>&copy; 2026 FinHub Tools. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cmdk" data-cmdk hidden>
+    <div class="cmdk__backdrop" data-cmdk-close></div>
+    <div class="cmdk__panel" role="dialog" aria-modal="true" aria-label="Search FinHub">
+      <div class="cmdk__field">
+        <svg class="cmdk__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
+        <input class="cmdk__input" data-cmdk-input type="text" role="combobox" aria-expanded="true" aria-controls="cmdk-list" aria-autocomplete="list" placeholder="Search calculators, planners and answers…" autocomplete="off" spellcheck="false">
+        <button type="button" class="cmdk__esc" data-cmdk-close aria-label="Close search">Esc</button>
+      </div>
+      <ul class="cmdk__list" data-cmdk-list id="cmdk-list" role="listbox" aria-label="Search results"></ul>
+      <div class="cmdk__foot" aria-hidden="true">
+        <span><kbd>&#8593;</kbd><kbd>&#8595;</kbd> move</span>
+        <span><kbd>&#8629;</kbd> open</span>
+        <span><kbd>esc</kbd> close</span>
+      </div>
+    </div>
+  </div>
+<script>window.FINHUB_INDEX = [{"t":"SIP Calculator","s":"/sip/","k":"Calculator","g":"Investment Calculators","d":"See the future value of monthly SIPs with total invested, estimated returns and annual step-up","w":"sip Investment Calculators"},{"t":"Lump Sum Calculator","s":"/lump-sum/","k":"Calculator","g":"Investment Calculators","d":"See what a one-time investment grows to","w":"lump sum Investment Calculators"},{"t":"Compound Interest Calculator","s":"/compound-interest/","k":"Calculator","g":"Investment Calculators","d":"Calculate compound interest with yearly, quarterly or monthly compounding plus optional monthly additions","w":"compound interest Investment Calculators"},{"t":"EMI / Loan Calculator","s":"/emi-loan/","k":"Calculator","g":"Loan Calculators","d":"Calculate monthly EMI for a loan with interest rate and tenure","w":"emi loan Loan Calculators"},{"t":"Mortgage Calculator","s":"/mortgage/","k":"Calculator","g":"Loan Calculators","d":"Estimate your true monthly housing cost: mortgage payment plus property tax and insurance","w":"mortgage Loan Calculators"},{"t":"Retirement Calculator","s":"/retirement/","k":"Calculator","g":"Retirement & Goals","d":"Find the retirement corpus you need, what your savings will grow to, and the monthly SIP that closes the gap - inflation-adjusted income model","w":"retirement Retirement & Goals"},{"t":"FD Calculator","s":"/fd/","k":"Calculator","g":"Savings Calculators","d":"Calculate fixed deposit maturity value and interest for a chosen deposit, rate and compounding frequency","w":"fd Savings Calculators"},{"t":"PPF Calculator","s":"/ppf/","k":"Calculator","g":"Savings Calculators","d":"Calculate your PPF maturity value, total deposits and tax-free interest for the 15-year (or extended) tenure at the current PPF rate","w":"ppf Savings Calculators"},{"t":"GST / Tax Calculator","s":"/gst-tax/","k":"Calculator","g":"Tax & Inflation","d":"Add GST to a net price or back it out of an inclusive total","w":"gst tax Tax & Inflation"},{"t":"Inflation Calculator","s":"/inflation/","k":"Calculator","g":"Tax & Inflation","d":"Calculate what today's money will cost in the future, or what a future amount is worth today","w":"inflation Tax & Inflation"},{"t":"Investment Return Calculator","s":"/investment-return/","k":"Calculator","g":"Investment Calculators","d":"Calculate the absolute return and ROI of an investment, with CAGR when there are no periodic deposits","w":"investment return Investment Calculators"},{"t":"CAGR Calculator","s":"/cagr/","k":"Calculator","g":"Investment Calculators","d":"Calculate the compound annual growth rate of an investment from beginning value, ending value and years","w":"cagr Investment Calculators"},{"t":"Stock Position Size Calculator","s":"/position-size/","k":"Calculator","g":"Stock & Trading","d":"Calculate how many shares to buy based on your account balance, risk per trade and stop-loss distance","w":"position size Stock & Trading"},{"t":"Risk/Reward Calculator","s":"/risk-reward/","k":"Calculator","g":"Stock & Trading","d":"Calculate the risk/reward ratio of any trade setup from entry, stop-loss and target","w":"risk reward Stock & Trading"},{"t":"Profit & Loss Calculator","s":"/profit-loss/","k":"Calculator","g":"Stock & Trading","d":"Calculate the profit or loss of a trade including buy and sell fees","w":"profit loss Stock & Trading"},{"t":"Savings Goal Calculator","s":"/savings-goal/","k":"Calculator","g":"Retirement & Goals","d":"Find out how long it takes to reach a savings goal with monthly deposits and expected return, starting from what you have saved already","w":"savings goal Retirement & Goals"},{"t":"Net Worth Calculator","s":"/net-worth/","k":"Calculator","g":"Personal Finance","d":"Calculate your net worth: total assets minus total liabilities, with a visual breakdown of where your money sits","w":"net worth Personal Finance"},{"t":"Real Return Calculator","s":"/real-return/","k":"Calculator","g":"Investment Calculators","d":"Find your real, inflation-adjusted return","w":"real return Investment Calculators"},{"t":"Expense Ratio Impact Calculator","s":"/expense-ratio/","k":"Calculator","g":"Investment Calculators","d":"See how a fund expense ratio compounds against your returns","w":"expense ratio Investment Calculators"},{"t":"SWP Calculator","s":"/swp/","k":"Calculator","g":"Investment Calculators","d":"Estimate the monthly income a corpus can pay under a systematic withdrawal plan, with withdrawals that grow each year","w":"swp Investment Calculators"},{"t":"XIRR Calculator","s":"/xirr/","k":"Calculator","g":"Investment Calculators","d":"Work out the annualised return (XIRR) implied by regular monthly investments and a final value, the way fund statements report it","w":"xirr Investment Calculators"},{"t":"STP Calculator","s":"/stp/","k":"Calculator","g":"Investment Calculators","d":"Model a systematic transfer plan: move a lump sum from a source fund into a target fund in monthly tranches and see the final value","w":"stp Investment Calculators"},{"t":"Home Loan Prepayment Calculator","s":"/home-loan-prepay/","k":"Calculator","g":"Loan Calculators","d":"See how much interest a one-time home loan prepayment saves and how many months earlier the loan closes, keeping the EMI unchanged","w":"home loan prepay Loan Calculators"},{"t":"Loan Comparison Calculator","s":"/loan-compare/","k":"Calculator","g":"Loan Calculators","d":"Compare two loan offers side by side: monthly EMI, total interest and outstanding balance over time, so you choose on total cost, not just the rate","w":"loan compare Loan Calculators"},{"t":"Debt Payoff Calculator","s":"/debt-payoff/","k":"Calculator","g":"Loan Calculators","d":"See how long a debt takes to clear at your monthly payment, how much interest you pay, and how an extra payment speeds it up","w":"debt payoff Loan Calculators"},{"t":"Credit Card Interest Calculator","s":"/credit-card-interest/","k":"Calculator","g":"Loan Calculators","d":"See what a revolving credit card balance costs in interest over a chosen number of months, with daily compounding","w":"credit card interest Loan Calculators"},{"t":"Recurring Deposit Calculator","s":"/rd/","k":"Calculator","g":"Savings Calculators","d":"Calculate the maturity value of a recurring deposit: deposit monthly, see total deposited, interest earned and the final amount","w":"rd Savings Calculators"},{"t":"Emergency Fund Calculator","s":"/emergency-fund/","k":"Calculator","g":"Savings Calculators","d":"Work out your emergency fund target from monthly expenses and how many months it will take to build at your current saving rate","w":"emergency fund Savings Calculators"},{"t":"FIRE Calculator","s":"/fire/","k":"Calculator","g":"Retirement & Goals","d":"Find your FI number from annual expenses and a safe withdrawal rate, and see how many years of saving it takes to reach financial independence","w":"fire Retirement & Goals"},{"t":"Coast FIRE Calculator","s":"/coast-fire/","k":"Calculator","g":"Retirement & Goals","d":"Find your Coast FIRE age: the point where your existing corpus can grow to your target on its own, with no further contributions","w":"coast fire Retirement & Goals"},{"t":"Income Tax Calculator (India)","s":"/income-tax/","k":"Calculator","g":"Tax & Inflation","d":"Estimate your Indian income tax under the new and old regimes with the standard deduction and 4% cess, for FY 2024-25","w":"income tax Tax & Inflation"},{"t":"Capital Gains Calculator (India)","s":"/capital-gains/","k":"Calculator","g":"Tax & Inflation","d":"Estimate Indian equity capital gains tax: 20% on short-term gains and 12","w":"capital gains Tax & Inflation"},{"t":"Adviser ROI Calculator","s":"/adviser-roi/","k":"Calculator","g":"Business & Advisers","d":"Estimate the time and money an adviser or finance team could save by replacing manual calculations and client reports with a platform","w":"adviser roi Business & Advisers"},{"t":"Personalized Money Plan","s":"/money-plan/","k":"Planner","g":"Plan & decide","d":"Your numbers become one ordered plan: safety net, debt, retirement and goals - with monthly amounts and milestones.","w":"money plan I want a plan for my money"},{"t":"Decision Comparisons","s":"/compare-decisions/","k":"Planner","g":"Plan & decide","d":"Put two real choices on the same axes - debt prepayment vs investing, or equity SIP vs a fixed deposit.","w":"compare decisions Help me choose between two options"},{"t":"Monthly Review","s":"/monthly-review/","k":"Planner","g":"Plan & decide","d":"Log a monthly check-in, compare it with last time, and keep the plan honest.","w":"monthly review Keep my plan on track"},{"t":"Financial Report","s":"/plan-report/","k":"Planner","g":"Plan & decide","d":"A clean, printable financial report built from your plan - print it or download the data.","w":"plan report Give me a written report"},{"t":"Financial Health Dashboard","s":"/dashboard/","k":"Planner","g":"Plan & decide","d":"See your savings rate, surplus, emergency fund, goal progress and health score in one place.","w":"dashboard How am I doing financially?"},{"t":"Goal Planner","s":"/goal-planner/","k":"Planner","g":"Plan & decide","d":"Turn a goal into a required monthly investment - and get a plan to close the gap.","w":"goal planner I have a goal to reach"},{"t":"Retirement Planner","s":"/retirement-planner/","k":"Planner","g":"Plan & decide","d":"Work out the corpus you need, the monthly saving to get there, and scenarios if you retire early or late.","w":"retirement planner Can I retire when I want to?"},{"t":"SIP Strategy Lab","s":"/sip-compare/","k":"Planner","g":"Plan & decide","d":"Compare flat SIP, step-up SIP and different amounts or timelines on one chart.","w":"sip compare Make my SIP better"},{"t":"What-If Lab","s":"/what-if-lab/","k":"Planner","g":"Plan & decide","d":"Test raise-the-SIP, step-up, lower returns, pauses and lump sums instantly.","w":"what if lab What happens if...?"},{"t":"Debt Payoff Planner","s":"/debt-planner/","k":"Planner","g":"Plan & decide","d":"Payoff timeline, total interest, and what extra payments save - avalanche vs snowball.","w":"debt planner When will I be debt-free?"},{"t":"Emergency Fund Planner","s":"/emergency-fund-planner/","k":"Planner","g":"Plan & decide","d":"Set the target, see your coverage and gap, and the months needed to fill it.","w":"emergency fund planner How big should my safety net be?"},{"t":"Net Worth Tracker","s":"/net-worth-tracker/","k":"Planner","g":"Plan & decide","d":"Add assets and liabilities, then save dated snapshots to see the trend over time.","w":"net worth tracker What is my net worth?"},{"t":"Savings Planner","s":"/savings-planner/","k":"Planner","g":"Plan & decide","d":"Find your monthly surplus and see what saving a little more is really worth.","w":"savings planner Save more each month"},{"t":"My Plans","s":"/my-plans/","k":"Planner","g":"Plan & decide","d":"Every plan you saved, on any device, ready to resume where you left off.","w":"my plans My saved plans"},{"t":"How much SIP do you need for ₹1 crore?","s":"/how-much-sip-for-1-crore/","k":"Answer","g":"Answers","d":"See the monthly SIP needed to reach ₹1 crore in 10 to 30 years at 10%, 12% and 14% returns, plus how to read the numbers and plan the goal properly.","w":"how much sip for 1 crore"},{"t":"How much will a ₹5,000 monthly SIP become?","s":"/how-much-will-5000-sip-become/","k":"Answer","g":"Answers","d":"See what a ₹5,000 monthly SIP grows to over 5, 10, 15, 20, 25 and 30 years at 8%, 10% and 12% returns, and how much of it is growth.","w":"how much will 5000 sip become"},{"t":"SIP vs lump sum: which invests better?","s":"/sip-vs-lumpsum/","k":"Answer","g":"Answers","d":"Compare investing the same ₹6 lakh as a lump sum today versus a ₹10,000 monthly SIP over 5 years at 8%, 10% and 12% returns, and understand the trade-off.","w":"sip vs lumpsum"},{"t":"How much will a ₹10,000 monthly SIP become?","s":"/how-much-will-10000-sip-become/","k":"Answer","g":"Answers","d":"See what a ₹10,000 monthly SIP grows to over 5, 10, 15, 20, 25 and 30 years at 8%, 10% and 12% returns, and how a 10% annual step-up changes it.","w":"how much will 10000 sip become"},{"t":"How to reach ₹1 crore: three routes","s":"/how-to-reach-1-crore/","k":"Answer","g":"Answers","d":"Three costed routes to a ₹1 crore target: a larger monthly SIP, a step-up SIP and a lump sum today, at 12% assumed return over 10 to 30 years.","w":"how to reach 1 crore"},{"t":"How to reach ₹50 lakh: three routes","s":"/how-to-reach-50-lakh/","k":"Answer","g":"Answers","d":"Three costed routes to a ₹50 lakh target: a flat monthly SIP, a step-up SIP and a lump sum today, at 12% assumed return over 5 to 30 years.","w":"how to reach 50 lakh"},{"t":"SIP step-up calculator: how much does raising your SIP each year add?","s":"/sip-step-up-calculator/","k":"Answer","g":"Answers","d":"See how a 5%, 10% or 15% annual SIP step-up changes a ₹10,000 monthly SIP over 10 to 30 years at 12%, and the step-up needed to hit ₹1 crore.","w":"sip step up calculator"},{"t":"What will your goal cost after inflation?","s":"/inflation-adjusted-goal/","k":"Answer","g":"Answers","d":"See how inflation raises the future cost of a goal: what ₹10, ₹25 and ₹50 lakh become in 10, 20 and 30 years at 5-7% inflation, and the SIP needed.","w":"inflation adjusted goal"},{"t":"How much emergency fund do you need?","s":"/emergency-fund-how-much/","k":"Answer","g":"Answers","d":"Work out your emergency fund target from essential monthly expenses and months of cover, and see how long it takes to build at different monthly savings.","w":"emergency fund how much"},{"t":"What does your savings rate do over time?","s":"/savings-rate-calculator/","k":"Answer","g":"Answers","d":"See what saving 10%, 20%, 30% or 40% of a ₹1 lakh income builds over 10 to 30 years at 12%, and why the savings rate matters more than the return.","w":"savings rate calculator"},{"t":"How big a retirement corpus do you need?","s":"/retirement-corpus-calculator/","k":"Answer","g":"Answers","d":"See the retirement corpus needed for different monthly expenses and retirement ages, and the monthly SIP to build it, at 6% inflation and 7-12% returns.","w":"retirement corpus calculator"},{"t":"About FinHub","s":"/about/","k":"Page","g":"FinHub","d":"FinHub is a free, transparent personal-finance calculator platform. Every tool shows its formula and assumptions, runs in your browser, and needs no sign-up.","w":"about"},{"t":"How the calculations work","s":"/how-it-works/","k":"Page","g":"FinHub","d":"The exact formulas and assumptions behind every FinHub calculator: annuity-due SIP maths, reducing-balance EMI, compound interest, inflation and retirement projections.","w":"how it works"},{"t":"Privacy","s":"/privacy/","k":"Page","g":"FinHub","d":"FinHub runs in your browser. No account, no upload of your figures, no sale of personal data. How the site handles your information.","w":"privacy"},{"t":"Terms of use","s":"/terms/","k":"Page","g":"FinHub","d":"Terms for using FinHub: educational estimates only, not financial advice, no warranty, and how optional advertising and partner links work.","w":"terms"},{"t":"Why you can trust this","s":"/trust/","k":"Page","g":"FinHub","d":"How FinHub handles your data, how every number is calculated, what we do not do, and how you stay in control. Runs entirely in your browser.","w":"trust"},{"t":"Support and contact","s":"/support/","k":"Page","g":"FinHub","d":"Contact FinHub, what to expect for response times, and answers on billing, refunds, data deletion and exporting your plans.","w":"support"}];</script>
+<script>window.FINHUB_LEADS = {"endpoint":"","email":"masterpol001@gmail.com","whatsapp":""};</script>
+
+<script type="module" src="/assets/js/app.js"></script>
+</body>
+</html>
