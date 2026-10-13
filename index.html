@@ -1,0 +1,842 @@
+
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Finance Calculators - SIP, EMI, CAGR, FD, Mortgage &amp; More</title>
+
+<meta name="description" content="Accurate, instant and free finance calculators: SIP, EMI, CAGR, FD, PPF, retirement, GST and trading tools. Compare scenarios and plan smarter.">
+<link rel="canonical" href="https://finhub-jet.vercel.app/">
+<meta name="theme-color" content="#6366f1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free Finance Calculators - SIP, EMI, CAGR, FD, Mortgage &amp; More">
+<meta property="og:description" content="Accurate, instant and free finance calculators: SIP, EMI, CAGR, FD, PPF, retirement, GST and trading tools. Compare scenarios and plan smarter.">
+<meta property="og:url" content="https://finhub-jet.vercel.app/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%236366f1'%2F%3E%3Ctext%20x%3D'32'%20y%3D'44'%20font-family%3D'Arial'%20font-size%3D'34'%20font-weight%3D'800'%20fill%3D'white'%20text-anchor%3D'middle'%3EF%3C%2Ftext%3E%3C%2Fsvg%3E">
+<link rel="apple-touch-icon" href="/icon.svg">
+<link rel="manifest" href="/manifest.webmanifest">
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"FinHub","url":"https://finhub-jet.vercel.app/","description":"Accurate, instant and free finance calculators: SIP, EMI, CAGR, FD, PPF, retirement, GST and trading tools. Compare scenarios and plan smarter."}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Finance calculators","itemListElement":[{"@type":"ListItem","position":1,"name":"SIP Calculator","url":"https://finhub-jet.vercel.app/sip/"},{"@type":"ListItem","position":2,"name":"Lump Sum Calculator","url":"https://finhub-jet.vercel.app/lump-sum/"},{"@type":"ListItem","position":3,"name":"Compound Interest Calculator","url":"https://finhub-jet.vercel.app/compound-interest/"},{"@type":"ListItem","position":4,"name":"EMI / Loan Calculator","url":"https://finhub-jet.vercel.app/emi-loan/"},{"@type":"ListItem","position":5,"name":"Mortgage Calculator","url":"https://finhub-jet.vercel.app/mortgage/"},{"@type":"ListItem","position":6,"name":"Retirement Calculator","url":"https://finhub-jet.vercel.app/retirement/"},{"@type":"ListItem","position":7,"name":"FD Calculator","url":"https://finhub-jet.vercel.app/fd/"},{"@type":"ListItem","position":8,"name":"PPF Calculator","url":"https://finhub-jet.vercel.app/ppf/"},{"@type":"ListItem","position":9,"name":"GST / Tax Calculator","url":"https://finhub-jet.vercel.app/gst-tax/"},{"@type":"ListItem","position":10,"name":"Inflation Calculator","url":"https://finhub-jet.vercel.app/inflation/"},{"@type":"ListItem","position":11,"name":"Investment Return Calculator","url":"https://finhub-jet.vercel.app/investment-return/"},{"@type":"ListItem","position":12,"name":"CAGR Calculator","url":"https://finhub-jet.vercel.app/cagr/"},{"@type":"ListItem","position":13,"name":"Stock Position Size Calculator","url":"https://finhub-jet.vercel.app/position-size/"},{"@type":"ListItem","position":14,"name":"Risk/Reward Calculator","url":"https://finhub-jet.vercel.app/risk-reward/"},{"@type":"ListItem","position":15,"name":"Profit & Loss Calculator","url":"https://finhub-jet.vercel.app/profit-loss/"},{"@type":"ListItem","position":16,"name":"Savings Goal Calculator","url":"https://finhub-jet.vercel.app/savings-goal/"},{"@type":"ListItem","position":17,"name":"Net Worth Calculator","url":"https://finhub-jet.vercel.app/net-worth/"},{"@type":"ListItem","position":18,"name":"Real Return Calculator","url":"https://finhub-jet.vercel.app/real-return/"},{"@type":"ListItem","position":19,"name":"Expense Ratio Impact Calculator","url":"https://finhub-jet.vercel.app/expense-ratio/"},{"@type":"ListItem","position":20,"name":"SWP Calculator","url":"https://finhub-jet.vercel.app/swp/"},{"@type":"ListItem","position":21,"name":"XIRR Calculator","url":"https://finhub-jet.vercel.app/xirr/"},{"@type":"ListItem","position":22,"name":"STP Calculator","url":"https://finhub-jet.vercel.app/stp/"},{"@type":"ListItem","position":23,"name":"Home Loan Prepayment Calculator","url":"https://finhub-jet.vercel.app/home-loan-prepay/"},{"@type":"ListItem","position":24,"name":"Loan Comparison Calculator","url":"https://finhub-jet.vercel.app/loan-compare/"},{"@type":"ListItem","position":25,"name":"Debt Payoff Calculator","url":"https://finhub-jet.vercel.app/debt-payoff/"},{"@type":"ListItem","position":26,"name":"Credit Card Interest Calculator","url":"https://finhub-jet.vercel.app/credit-card-interest/"},{"@type":"ListItem","position":27,"name":"Recurring Deposit Calculator","url":"https://finhub-jet.vercel.app/rd/"},{"@type":"ListItem","position":28,"name":"Emergency Fund Calculator","url":"https://finhub-jet.vercel.app/emergency-fund/"},{"@type":"ListItem","position":29,"name":"FIRE Calculator","url":"https://finhub-jet.vercel.app/fire/"},{"@type":"ListItem","position":30,"name":"Coast FIRE Calculator","url":"https://finhub-jet.vercel.app/coast-fire/"},{"@type":"ListItem","position":31,"name":"Income Tax Calculator (India)","url":"https://finhub-jet.vercel.app/income-tax/"},{"@type":"ListItem","position":32,"name":"Capital Gains Calculator (India)","url":"https://finhub-jet.vercel.app/capital-gains/"},{"@type":"ListItem","position":33,"name":"Adviser ROI Calculator","url":"https://finhub-jet.vercel.app/adviser-roi/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Decision tools","itemListElement":[{"@type":"ListItem","position":1,"name":"Personalized Money Plan","url":"https://finhub-jet.vercel.app/money-plan/"},{"@type":"ListItem","position":2,"name":"Decision Comparisons","url":"https://finhub-jet.vercel.app/compare-decisions/"},{"@type":"ListItem","position":3,"name":"Monthly Review","url":"https://finhub-jet.vercel.app/monthly-review/"},{"@type":"ListItem","position":4,"name":"Financial Report","url":"https://finhub-jet.vercel.app/plan-report/"},{"@type":"ListItem","position":5,"name":"Financial Health Dashboard","url":"https://finhub-jet.vercel.app/dashboard/"},{"@type":"ListItem","position":6,"name":"Goal Planner","url":"https://finhub-jet.vercel.app/goal-planner/"},{"@type":"ListItem","position":7,"name":"Retirement Planner","url":"https://finhub-jet.vercel.app/retirement-planner/"},{"@type":"ListItem","position":8,"name":"SIP Strategy Lab","url":"https://finhub-jet.vercel.app/sip-compare/"},{"@type":"ListItem","position":9,"name":"What-If Lab","url":"https://finhub-jet.vercel.app/what-if-lab/"},{"@type":"ListItem","position":10,"name":"Debt Payoff Planner","url":"https://finhub-jet.vercel.app/debt-planner/"},{"@type":"ListItem","position":11,"name":"Emergency Fund Planner","url":"https://finhub-jet.vercel.app/emergency-fund-planner/"},{"@type":"ListItem","position":12,"name":"Net Worth Tracker","url":"https://finhub-jet.vercel.app/net-worth-tracker/"},{"@type":"ListItem","position":13,"name":"Savings Planner","url":"https://finhub-jet.vercel.app/savings-planner/"},{"@type":"ListItem","position":14,"name":"My Plans","url":"https://finhub-jet.vercel.app/my-plans/"}]}</script>
+<link rel="stylesheet" href="/assets/css/styles.css">
+
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<p class="print-brand"><span class="print-brand__mark">F</span> FinHub</p>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="logo" href="/" aria-label="FinHub home"><span class="logo__mark">F</span><span class="logo__word">FinHub</span></a>
+      <nav class="nav-center" aria-label="Primary">
+        <a href="/dashboard/">Plan</a><a href="/#calculators">Calculators</a><a href="/#answers">Answers</a>
+      </nav>
+      <div class="header-right">
+        <button type="button" class="search-btn" data-cmdk-open aria-label="Search FinHub (press Control or Command K)">
+          <svg class="search-btn__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
+          <span class="search-btn__label">Search</span>
+          <kbd class="search-btn__kbd" aria-hidden="true">&#8984;K</kbd>
+        </button>
+        <a class="btn btn--primary btn--sm" href="/money-plan/">My plan</a>
+        <div class="nav-more" data-nav-more>
+          <button type="button" class="nav-more__btn" data-nav-menu aria-expanded="false" aria-haspopup="true">Menu <span aria-hidden="true">&#9662;</span></button>
+          <div class="nav-more__panel" data-nav-menu-panel hidden>
+            <a href="/money-plan/">Money plan</a><a href="/compare-decisions/">Compare decisions</a><a href="/monthly-review/">Monthly review</a><a href="/plan-report/">Financial report</a><a href="/net-worth/">Net worth</a><a href="/my-plans/">My plans</a><a href="/sell/">For advisers</a>
+          </div>
+        </div>
+        <button type="button" class="icon-btn" data-theme-toggle aria-label="Switch theme" title="Toggle dark / light mode">&#9680;</button>
+      </div>
+    </div>
+  </header>
+<main id="main">
+
+  
+  <section class="hero-editorial">
+    <div class="ambient" data-ambient aria-hidden="true"></div>
+    <div class="container hero-editorial__inner">
+      <p class="eyebrow eyebrow--rise">Personal finance, made calm</p>
+      <h1 class="hero-editorial__title"><span>Your money.</span><span>Made understandable.</span></h1>
+      <p class="hero-editorial__lede">One calm place to see where you are, understand what comes next, and turn numbers into a plan.</p>
+      <div class="hero-editorial__actions">
+        <a class="btn btn--primary btn--lg" href="/money-plan/">Build my plan <span class="arrow" aria-hidden="true">&rarr;</span></a>
+        <a class="hero-editorial__textcta" href="#where-you-stand">Start with your numbers <span class="arrow" aria-hidden="true">&rarr;</span></a>
+      </div>
+      <div class="instrument" data-instrument>
+        <div class="instrument__glow" aria-hidden="true"></div>
+        <div class="instrument__surface">
+          <div class="instrument__top">
+            <span class="instrument__label">Monthly surplus</span>
+            <span class="instrument__delta">+31%</span>
+          </div>
+          <div class="instrument__metric" data-count="25000" data-count-prefix="₹">₹25,000</div>
+          <svg class="instrument__chart" viewBox="0 0 640 190" preserveAspectRatio="none" aria-hidden="true">
+            <defs>
+              <linearGradient id="heroFill" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#2563EB" stop-opacity="0.42"/>
+                <stop offset="0.6" stop-color="#159570" stop-opacity="0.14"/>
+                <stop offset="1" stop-color="#159570" stop-opacity="0"/>
+              </linearGradient>
+              <linearGradient id="heroStroke" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#173B8F"/><stop offset="0.55" stop-color="#2563EB"/><stop offset="1" stop-color="#159570"/>
+              </linearGradient>
+            </defs>
+            <path class="instrument__area" d="M 0.0 169.5 C 29.1 169.5, 29.1 161.4, 58.2 161.4 C 87.3 161.4, 87.3 153.3, 116.4 153.3 C 145.5 153.3, 145.5 143.6, 174.5 143.6 C 203.6 143.6, 203.6 132.3, 232.7 132.3 C 261.8 132.3, 261.8 119.3, 290.9 119.3 C 320.0 119.3, 320.0 104.7, 349.1 104.7 C 378.2 104.7, 378.2 88.5, 407.3 88.5 C 436.4 88.5, 436.4 70.7, 465.5 70.7 C 494.5 70.7, 494.5 49.6, 523.6 49.6 C 552.7 49.6, 552.7 27.0, 581.8 27.0 C 610.9 27.0, 610.9 14.0, 640.0 14.0 L 640 190 L 0 190 Z" fill="url(#heroFill)"/>
+            <path class="instrument__line" data-hero-line d="M 0.0 169.5 C 29.1 169.5, 29.1 161.4, 58.2 161.4 C 87.3 161.4, 87.3 153.3, 116.4 153.3 C 145.5 153.3, 145.5 143.6, 174.5 143.6 C 203.6 143.6, 203.6 132.3, 232.7 132.3 C 261.8 132.3, 261.8 119.3, 290.9 119.3 C 320.0 119.3, 320.0 104.7, 349.1 104.7 C 378.2 104.7, 378.2 88.5, 407.3 88.5 C 436.4 88.5, 436.4 70.7, 465.5 70.7 C 494.5 70.7, 494.5 49.6, 523.6 49.6 C 552.7 49.6, 552.7 27.0, 581.8 27.0 C 610.9 27.0, 610.9 14.0, 640.0 14.0" fill="none" stroke="url(#heroStroke)" stroke-width="3" stroke-linecap="round"/>
+            <circle class="instrument__dot" data-hero-dot cx="640" cy="14" r="5" fill="#159570"/>
+          </svg>
+          <div class="instrument__legend">
+            <span class="lg lg--savings">Savings</span>
+            <span class="lg lg--invest">Investments</span>
+            <span class="lg lg--debt">Debt</span>
+            <span class="lg lg--safety">Safety</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="container intents" aria-labelledby="intents-title">
+    <p class="eyebrow">Start here</p>
+    <h2 id="intents-title" class="section-title">What are you trying to figure out?</h2>
+    <p class="group__note">Pick one and we open the right tool. You can always change your mind.</p>
+    <div class="intent-grid">
+      <a class="intent-tile intent-tile--grow" href="/sip/">
+        <span class="intent-tile__num">01</span>
+        <span class="intent-tile__title">Grow my money</span>
+        <span class="intent-tile__desc">See what a monthly investment could become over time.</span>
+        <span class="intent-tile__cta">Show me <span class="arrow" aria-hidden="true">&rarr;</span></span>
+        <svg class="intent-tile__viz" viewBox="0 0 300 120" role="img" aria-hidden="true" preserveAspectRatio="none">
+      <defs><linearGradient id="iv-grow" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#2563EB" stop-opacity="0.35"/><stop offset="1" stop-color="#2563EB" stop-opacity="0"/>
+      </linearGradient></defs>
+      <path d="M 0.0 106.0 C 21.4 106.0, 21.4 100.0, 42.9 100.0 C 64.3 100.0, 64.3 92.0, 85.7 92.0 C 107.1 92.0, 107.1 82.0, 128.6 82.0 C 150.0 82.0, 150.0 68.0, 171.4 68.0 C 192.9 68.0, 192.9 50.0, 214.3 50.0 C 235.7 50.0, 235.7 30.0, 257.1 30.0 C 278.6 30.0, 278.6 10.0, 300.0 10.0 L 300 120 L 0 120 Z" fill="url(#iv-grow)"/>
+      <path d="M 0.0 106.0 C 21.4 106.0, 21.4 100.0, 42.9 100.0 C 64.3 100.0, 64.3 92.0, 85.7 92.0 C 107.1 92.0, 107.1 82.0, 128.6 82.0 C 150.0 82.0, 150.0 68.0, 171.4 68.0 C 192.9 68.0, 192.9 50.0, 214.3 50.0 C 235.7 50.0, 235.7 30.0, 257.1 30.0 C 278.6 30.0, 278.6 10.0, 300.0 10.0" fill="none" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round"/>
+    </svg>
+      </a><a class="intent-tile intent-tile--goal" href="/goal-planner/">
+        <span class="intent-tile__num">02</span>
+        <span class="intent-tile__title">Reach a goal</span>
+        <span class="intent-tile__desc">Find out how much you need to invest each month.</span>
+        <span class="intent-tile__cta">Show me <span class="arrow" aria-hidden="true">&rarr;</span></span>
+        <svg class="intent-tile__viz" viewBox="0 0 300 120" aria-hidden="true">
+        <circle cx="150" cy="60" r="46" fill="none" stroke="#9B8AFB" stroke-opacity="0.3" stroke-width="2"/><circle cx="150" cy="60" r="32" fill="none" stroke="#9B8AFB" stroke-opacity="0.54" stroke-width="2"/><circle cx="150" cy="60" r="18" fill="none" stroke="#9B8AFB" stroke-opacity="0.78" stroke-width="2"/>
+        <circle cx="150" cy="60" r="6" fill="#9B8AFB"/>
+      </svg>
+      </a><a class="intent-tile intent-tile--retire" href="/retirement-planner/">
+        <span class="intent-tile__num">03</span>
+        <span class="intent-tile__title">Plan my retirement</span>
+        <span class="intent-tile__desc">Work out your retirement number and the monthly saving.</span>
+        <span class="intent-tile__cta">Show me <span class="arrow" aria-hidden="true">&rarr;</span></span>
+        <svg class="intent-tile__viz" viewBox="0 0 300 120" aria-hidden="true" preserveAspectRatio="none">
+        <defs><linearGradient id="iv-ret" x1="0" y1="1" x2="0" y2="0">
+          <stop offset="0" stop-color="#E7A83B" stop-opacity="0"/><stop offset="1" stop-color="#E7A83B" stop-opacity="0.55"/></linearGradient></defs>
+        <circle cx="240" cy="70" r="34" fill="url(#iv-ret)"/>
+        <path d="M 0.0 104.2 C 25.0 104.2, 25.0 100.5, 50.0 100.5 C 75.0 100.5, 75.0 93.1, 100.0 93.1 C 125.0 93.1, 125.0 78.4, 150.0 78.4 C 175.0 78.4, 175.0 55.4, 200.0 55.4 C 225.0 55.4, 225.0 26.9, 250.0 26.9 C 275.0 26.9, 275.0 14.0, 300.0 14.0" fill="none" stroke="#E7A83B" stroke-width="2.5"/>
+        <line x1="0" y1="106" x2="300" y2="106" stroke="#E7A83B" stroke-opacity="0.35"/>
+      </svg>
+      </a><a class="intent-tile intent-tile--debt" href="/debt-planner/">
+        <span class="intent-tile__num">04</span>
+        <span class="intent-tile__title">Get out of debt</span>
+        <span class="intent-tile__desc">See when you will be debt-free and what extra payments save.</span>
+        <span class="intent-tile__cta">Show me <span class="arrow" aria-hidden="true">&rarr;</span></span>
+        <svg class="intent-tile__viz" viewBox="0 0 300 120" aria-hidden="true" preserveAspectRatio="none">
+        <path d="M 0.0 12.0 C 21.4 12.0, 21.4 29.3, 42.9 29.3 C 64.3 29.3, 64.3 48.5, 85.7 48.5 C 107.1 48.5, 107.1 64.8, 128.6 64.8 C 150.0 64.8, 150.0 81.1, 171.4 81.1 C 192.9 81.1, 192.9 94.6, 214.3 94.6 C 235.7 94.6, 235.7 104.2, 257.1 104.2 C 278.6 104.2, 278.6 108.0, 300.0 108.0" fill="none" stroke="#E87968" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="0" y1="108" x2="300" y2="108" stroke="#E87968" stroke-opacity="0.5" stroke-dasharray="4 4"/>
+      </svg>
+      </a><a class="intent-tile intent-tile--safety" href="/emergency-fund-planner/">
+        <span class="intent-tile__num">05</span>
+        <span class="intent-tile__title">Build financial safety</span>
+        <span class="intent-tile__desc">Set your emergency fund target and the months to fill it.</span>
+        <span class="intent-tile__cta">Show me <span class="arrow" aria-hidden="true">&rarr;</span></span>
+        <svg class="intent-tile__viz" viewBox="0 0 300 120" aria-hidden="true">
+        <circle cx="150" cy="60" r="46" fill="none" stroke="#159570" stroke-opacity="0.28" stroke-width="2"/><circle cx="150" cy="60" r="34" fill="none" stroke="#159570" stroke-opacity="0.52" stroke-width="2"/><circle cx="150" cy="60" r="22" fill="none" stroke="#159570" stroke-opacity="0.76" stroke-width="2"/>
+      </svg>
+      </a><a class="intent-tile intent-tile--understand" href="/dashboard/">
+        <span class="intent-tile__num">06</span>
+        <span class="intent-tile__title">Understand my finances</span>
+        <span class="intent-tile__desc">See your savings, debt and progress in one place.</span>
+        <span class="intent-tile__cta">Show me <span class="arrow" aria-hidden="true">&rarr;</span></span>
+        <svg class="intent-tile__viz" viewBox="0 0 300 120" aria-hidden="true">
+        <rect x="40" y="34" width="90" height="56" rx="8" fill="#2563EB" fill-opacity="0.22"/>
+        <rect x="170" y="52" width="90" height="38" rx="8" fill="#E87968" fill-opacity="0.28"/>
+        <line x1="20" y1="90" x2="280" y2="90" stroke="#77736C" stroke-opacity="0.5"/>
+      </svg>
+      </a>
+    </div>
+  </section>
+  
+  <section class="container ask" aria-labelledby="ask-title">
+    <p class="eyebrow">Ask in your own words</p>
+    <h2 id="ask-title" class="section-title">What do you want to know about your money?</h2>
+    <form class="ask-form ask-form--glow" data-ask-form novalidate>
+      <label class="sr-only" for="ask-input">Ask a money question</label>
+      <input id="ask-input" class="ask-form__input" type="text" data-ask-input autocomplete="off"
+        placeholder="How much SIP do I need to reach ₹1 crore?" />
+      <button type="submit" class="btn btn--primary">Find the right tool</button>
+    </form>
+    <div class="ask-chips" data-ask-chips aria-label="Example questions">
+      <button type="button" class="ask-chip" data-ask-example="Can I retire at 50?">Can I retire at 50?</button><button type="button" class="ask-chip" data-ask-example="How much should I invest?">How much should I invest?</button><button type="button" class="ask-chip" data-ask-example="How quickly can I clear my loan?">How quickly can I clear my loan?</button><button type="button" class="ask-chip" data-ask-example="How big should my emergency fund be?">How big should my emergency fund be?</button><button type="button" class="ask-chip" data-ask-example="What will 50000 a month become in 20 years?">What will 50000 a month become in 20 years?</button><button type="button" class="ask-chip" data-ask-example="How much tax will I pay?">How much tax will I pay?</button>
+    </div>
+    <div class="ask-results" data-ask-results role="status" aria-live="polite" hidden></div>
+  </section>
+  
+  <section class="container snapshot picture-section" id="where-you-stand" aria-labelledby="snapshot-title">
+    <p class="eyebrow">Your financial picture</p>
+    <h2 id="snapshot-title" class="section-title">Seven numbers. One clear picture.</h2>
+    <p class="group__note">Start with your numbers and we show you what stands out. Nothing leaves your device and there is no sign-up.</p>
+    <form class="snapshot-form" data-snapshot-form novalidate>
+      <div class="snapshot-grid">
+        
+        <label class="snapshot-field">
+          <span class="snapshot-field__label">Your age</span>
+          <input type="number" min="0" step="any" inputmode="numeric" name="age" data-snapshot-input="age" value="30" aria-label="Your age">
+        </label>
+        <label class="snapshot-field">
+          <span class="snapshot-field__label">Monthly income</span>
+          <input type="number" min="0" step="any" inputmode="numeric" name="income" data-snapshot-input="income" value="80000" aria-label="Monthly income">
+        </label>
+        <label class="snapshot-field">
+          <span class="snapshot-field__label">Monthly expenses</span>
+          <input type="number" min="0" step="any" inputmode="numeric" name="expenses" data-snapshot-input="expenses" value="55000" aria-label="Monthly expenses">
+        </label>
+        <label class="snapshot-field">
+          <span class="snapshot-field__label">Cash / emergency savings</span>
+          <input type="number" min="0" step="any" inputmode="numeric" name="cash" data-snapshot-input="cash" value="120000" aria-label="Cash / emergency savings">
+        </label>
+        <label class="snapshot-field">
+          <span class="snapshot-field__label">Current investments</span>
+          <input type="number" min="0" step="any" inputmode="numeric" name="investments" data-snapshot-input="investments" value="400000" aria-label="Current investments">
+        </label>
+        <label class="snapshot-field">
+          <span class="snapshot-field__label">Total debt</span>
+          <input type="number" min="0" step="any" inputmode="numeric" name="debt" data-snapshot-input="debt" value="300000" aria-label="Total debt">
+        </label>
+        <label class="snapshot-field">
+          <span class="snapshot-field__label">Monthly loan payments</span>
+          <input type="number" min="0" step="any" inputmode="numeric" name="debtPayment" data-snapshot-input="debtPayment" value="12000" aria-label="Monthly loan payments">
+        </label>
+      </div>
+      <div class="snapshot-actions">
+        <button type="submit" class="btn btn--primary">Show me what stands out</button>
+        <button type="button" class="btn btn--ghost" data-snapshot-clear>Clear</button>
+        <span class="snapshot-status" data-snapshot-status role="status"></span>
+      </div>
+    </form>
+    <div class="snapshot-results" data-snapshot-results>
+    <div class="picture">
+      <div class="picture__score snapshot-score snapshot-score--warn" style="--score:67">
+        <div class="picture__ring" role="img" aria-label="Financial health score 67 out of 100, Fair">
+          <span class="snapshot-score__num">67</span>
+          <span class="snapshot-score__grade">Fair</span>
+        </div>
+        <span class="snapshot-score__label">Financial health</span>
+      </div>
+      <div class="picture__stats">
+        
+        <div class="picture__stat picture__stat--ok">
+          <span class="picture__stat-label">Monthly surplus</span>
+          <span class="picture__stat-value">₹25,000</span>
+          <span class="picture__stat-hint">31% of income after spending</span>
+        </div>
+        <div class="picture__stat picture__stat--bad">
+          <span class="picture__stat-label">Safety net</span>
+          <span class="picture__stat-value">2.2 months</span>
+          <span class="picture__stat-hint">₹2,10,000 short of a 6-month buffer</span>
+        </div>
+        <div class="picture__stat picture__stat--ok">
+          <span class="picture__stat-label">Net worth</span>
+          <span class="picture__stat-value">₹2,20,000</span>
+          <span class="picture__stat-hint">₹5,20,000 saved &middot; ₹3,00,000 owed</span>
+        </div>
+        <div class="picture__stat picture__stat--warn">
+          <span class="picture__stat-label">Debt</span>
+          <span class="picture__stat-value">₹3,00,000</span>
+          <span class="picture__stat-hint">15% of income goes to loans</span>
+        </div>
+      </div>
+    </div>
+    <a class="snapshot-cta" href="/money-plan/">
+      <span class="snapshot-cta__title">Get my personalized money plan</span>
+      <span class="snapshot-cta__sub">Your numbers become one ordered plan - monthly amounts, milestones and goals. Free, saved in this browser.</span>
+      <span class="snapshot-cta__go">Build my plan &rarr;</span>
+    </a>
+    <p class="snapshot-disclaimer">Estimates from the numbers you entered at 12% returns and 6% inflation. Educational only - not financial advice.</p></div>
+  </section>
+  
+  <section class="container story" aria-labelledby="story-title">
+    <p class="eyebrow">In plain language</p>
+    <h2 id="story-title" class="section-title">Here&rsquo;s what your money is saying.</h2>
+    <p class="group__note">Written from the same example numbers above - your own picture updates as you change them.</p>
+    <div class="story__grid">
+      
+      <article class="story__item">
+        <h3 class="story__lead">You have room to invest.</h3>
+        <p class="story__body">₹25,000 remains after monthly spending.</p>
+        <svg class="story__viz" viewBox="0 0 180 64" aria-hidden="true" preserveAspectRatio="none">
+      <defs><linearGradient id="st-surplus" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2563EB" stop-opacity="0.32"/><stop offset="1" stop-color="#2563EB" stop-opacity="0"/></linearGradient></defs>
+      <path d="M 0.0 42.4 C 18.0 42.4, 18.0 36.2, 36.0 36.2 C 54.0 36.2, 54.0 32.0, 72.0 32.0 C 90.0 32.0, 90.0 25.8, 108.0 25.8 C 126.0 25.8, 126.0 17.4, 144.0 17.4 C 162.0 17.4, 162.0 6.0, 180.0 6.0 L 180 64 L 0 64 Z" fill="url(#st-surplus)"/>
+      <path d="M 0.0 42.4 C 18.0 42.4, 18.0 36.2, 36.0 36.2 C 54.0 36.2, 54.0 32.0, 72.0 32.0 C 90.0 32.0, 90.0 25.8, 108.0 25.8 C 126.0 25.8, 126.0 17.4, 144.0 17.4 C 162.0 17.4, 162.0 6.0, 180.0 6.0" fill="none" stroke="#2563EB" stroke-width="2"/>
+    </svg>
+      </article>
+      <article class="story__item">
+        <h3 class="story__lead">Your safety buffer needs attention.</h3>
+        <p class="story__body">You currently have about 2.2 months of expenses saved.</p>
+        <svg class="story__viz" viewBox="0 0 180 64" aria-hidden="true" preserveAspectRatio="none">
+      <defs><linearGradient id="st-safe" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#159570" stop-opacity="0.32"/><stop offset="1" stop-color="#159570" stop-opacity="0"/></linearGradient></defs>
+      <path d="M 0.0 47.6 C 18.0 47.6, 18.0 39.8, 36.0 39.8 C 54.0 39.8, 54.0 29.4, 72.0 29.4 C 90.0 29.4, 90.0 21.6, 108.0 21.6 C 126.0 21.6, 126.0 13.8, 144.0 13.8 C 162.0 13.8, 162.0 6.0, 180.0 6.0 L 180 64 L 0 64 Z" fill="url(#st-safe)"/>
+      <path d="M 0.0 47.6 C 18.0 47.6, 18.0 39.8, 36.0 39.8 C 54.0 39.8, 54.0 29.4, 72.0 29.4 C 90.0 29.4, 90.0 21.6, 108.0 21.6 C 126.0 21.6, 126.0 13.8, 144.0 13.8 C 162.0 13.8, 162.0 6.0, 180.0 6.0" fill="none" stroke="#159570" stroke-width="2"/>
+    </svg>
+      </article>
+      <article class="story__item">
+        <h3 class="story__lead">Your investments are doing the long-term work.</h3>
+        <p class="story__body">₹4,00,000 is already invested.</p>
+        <svg class="story__viz" viewBox="0 0 180 64" aria-hidden="true" preserveAspectRatio="none">
+      <defs><linearGradient id="st-invest" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#173B8F" stop-opacity="0.32"/><stop offset="1" stop-color="#173B8F" stop-opacity="0"/></linearGradient></defs>
+      <path d="M 0.0 52.8 C 18.0 52.8, 18.0 47.6, 36.0 47.6 C 54.0 47.6, 54.0 39.3, 72.0 39.3 C 90.0 39.3, 90.0 29.4, 108.0 29.4 C 126.0 29.4, 126.0 17.4, 144.0 17.4 C 162.0 17.4, 162.0 6.0, 180.0 6.0 L 180 64 L 0 64 Z" fill="url(#st-invest)"/>
+      <path d="M 0.0 52.8 C 18.0 52.8, 18.0 47.6, 36.0 47.6 C 54.0 47.6, 54.0 39.3, 72.0 39.3 C 90.0 39.3, 90.0 29.4, 108.0 29.4 C 126.0 29.4, 126.0 17.4, 144.0 17.4 C 162.0 17.4, 162.0 6.0, 180.0 6.0" fill="none" stroke="#173B8F" stroke-width="2"/>
+    </svg>
+      </article>
+      <article class="story__item">
+        <h3 class="story__lead">Your debt is manageable, but visible.</h3>
+        <p class="story__body">₹3,00,000 remains outstanding.</p>
+        <svg class="story__viz" viewBox="0 0 180 64" aria-hidden="true" preserveAspectRatio="none">
+      <defs><linearGradient id="st-debt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E87968" stop-opacity="0.32"/><stop offset="1" stop-color="#E87968" stop-opacity="0"/></linearGradient></defs>
+      <path d="M 0.0 50.7 C 18.0 50.7, 18.0 43.4, 36.0 43.4 C 54.0 43.4, 54.0 35.1, 72.0 35.1 C 90.0 35.1, 90.0 26.8, 108.0 26.8 C 126.0 26.8, 126.0 17.4, 144.0 17.4 C 162.0 17.4, 162.0 6.0, 180.0 6.0 L 180 64 L 0 64 Z" fill="url(#st-debt)"/>
+      <path d="M 0.0 50.7 C 18.0 50.7, 18.0 43.4, 36.0 43.4 C 54.0 43.4, 54.0 35.1, 72.0 35.1 C 90.0 35.1, 90.0 26.8, 108.0 26.8 C 126.0 26.8, 126.0 17.4, 144.0 17.4 C 162.0 17.4, 162.0 6.0, 180.0 6.0" fill="none" stroke="#E87968" stroke-width="2"/>
+    </svg>
+      </article>
+    </div>
+  </section>
+  
+  <section class="future" aria-labelledby="future-title">
+    <div class="future__atmos" aria-hidden="true"></div>
+    <div class="container future__inner">
+      <p class="eyebrow eyebrow--light">The long view</p>
+      <h2 id="future-title" class="future__title">What could your future look like?</h2>
+      <div class="future__metric" data-count="100231813" data-count-prefix="₹">₹10,02,31,813</div>
+      <p class="future__caption">Projected retirement corpus</p>
+      <svg class="future__curve" viewBox="0 0 1000 300" preserveAspectRatio="none" aria-hidden="true">
+        <defs><linearGradient id="futureFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2563EB" stop-opacity="0.4"/><stop offset="0.5" stop-color="#9B8AFB" stop-opacity="0.16"/><stop offset="1" stop-color="#E7A83B" stop-opacity="0"/></linearGradient>
+          <linearGradient id="futureStroke" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2563EB"/><stop offset="0.5" stop-color="#9B8AFB"/><stop offset="1" stop-color="#E7A83B"/></linearGradient></defs>
+        <path d="M 0.0 275.2 C 9.1 275.2, 9.1 274.5, 18.2 274.5 C 27.3 274.5, 27.3 273.7, 36.4 273.7 C 45.5 273.7, 45.5 272.8, 54.5 272.8 C 63.6 272.8, 63.6 271.8, 72.7 271.8 C 81.8 271.8, 81.8 270.6, 90.9 270.6 C 100.0 270.6, 100.0 269.3, 109.1 269.3 C 118.2 269.3, 118.2 267.9, 127.3 267.9 C 136.4 267.9, 136.4 266.2, 145.5 266.2 C 154.5 266.2, 154.5 264.4, 163.6 264.4 C 172.7 264.4, 172.7 262.3, 181.8 262.3 C 190.9 262.3, 190.9 259.9, 200.0 259.9 C 209.1 259.9, 209.1 257.3, 218.2 257.3 C 227.3 257.3, 227.3 254.3, 236.4 254.3 C 245.5 254.3, 245.5 251.0, 254.5 251.0 C 263.6 251.0, 263.6 247.2, 272.7 247.2 C 281.8 247.2, 281.8 243.0, 290.9 243.0 C 300.0 243.0, 300.0 238.2, 309.1 238.2 C 318.2 238.2, 318.2 232.8, 327.3 232.8 C 336.4 232.8, 336.4 226.8, 345.5 226.8 C 354.5 226.8, 354.5 219.9, 363.6 219.9 C 372.7 219.9, 372.7 212.3, 381.8 212.3 C 390.9 212.3, 390.9 203.6, 400.0 203.6 C 409.1 203.6, 409.1 193.9, 418.2 193.9 C 427.3 193.9, 427.3 182.9, 436.4 182.9 C 445.5 182.9, 445.5 170.5, 454.5 170.5 C 463.6 170.5, 463.6 156.6, 472.7 156.6 C 481.8 156.6, 481.8 141.0, 490.9 141.0 C 500.0 141.0, 500.0 123.3, 509.1 123.3 C 518.2 123.3, 518.2 103.5, 527.3 103.5 C 536.4 103.5, 536.4 81.1, 545.5 81.1 C 554.5 81.1, 554.5 75.4, 563.6 75.4 C 572.7 75.4, 572.7 69.7, 581.8 69.7 C 590.9 69.7, 590.9 64.1, 600.0 64.1 C 609.1 64.1, 609.1 58.7, 618.2 58.7 C 627.3 58.7, 627.3 53.4, 636.4 53.4 C 645.5 53.4, 645.5 48.4, 654.5 48.4 C 663.6 48.4, 663.6 43.6, 672.7 43.6 C 681.8 43.6, 681.8 39.2, 690.9 39.2 C 700.0 39.2, 700.0 35.2, 709.1 35.2 C 718.2 35.2, 718.2 31.7, 727.3 31.7 C 736.4 31.7, 736.4 28.7, 745.5 28.7 C 754.5 28.7, 754.5 26.4, 763.6 26.4 C 772.7 26.4, 772.7 24.8, 781.8 24.8 C 790.9 24.8, 790.9 24.0, 800.0 24.0 C 809.1 24.0, 809.1 24.2, 818.2 24.2 C 827.3 24.2, 827.3 25.5, 836.4 25.5 C 845.5 25.5, 845.5 28.0, 854.5 28.0 C 863.6 28.0, 863.6 31.8, 872.7 31.8 C 881.8 31.8, 881.8 37.2, 890.9 37.2 C 900.0 37.2, 900.0 44.4, 909.1 44.4 C 918.2 44.4, 918.2 53.5, 927.3 53.5 C 936.4 53.5, 936.4 64.7, 945.5 64.7 C 954.5 64.7, 954.5 78.3, 963.6 78.3 C 972.7 78.3, 972.7 94.6, 981.8 94.6 C 990.9 94.6, 990.9 113.8, 1000.0 113.8 L 1000 300 L 0 300 Z" fill="url(#futureFill)"/>
+        <path class="future__line" d="M 0.0 275.2 C 9.1 275.2, 9.1 274.5, 18.2 274.5 C 27.3 274.5, 27.3 273.7, 36.4 273.7 C 45.5 273.7, 45.5 272.8, 54.5 272.8 C 63.6 272.8, 63.6 271.8, 72.7 271.8 C 81.8 271.8, 81.8 270.6, 90.9 270.6 C 100.0 270.6, 100.0 269.3, 109.1 269.3 C 118.2 269.3, 118.2 267.9, 127.3 267.9 C 136.4 267.9, 136.4 266.2, 145.5 266.2 C 154.5 266.2, 154.5 264.4, 163.6 264.4 C 172.7 264.4, 172.7 262.3, 181.8 262.3 C 190.9 262.3, 190.9 259.9, 200.0 259.9 C 209.1 259.9, 209.1 257.3, 218.2 257.3 C 227.3 257.3, 227.3 254.3, 236.4 254.3 C 245.5 254.3, 245.5 251.0, 254.5 251.0 C 263.6 251.0, 263.6 247.2, 272.7 247.2 C 281.8 247.2, 281.8 243.0, 290.9 243.0 C 300.0 243.0, 300.0 238.2, 309.1 238.2 C 318.2 238.2, 318.2 232.8, 327.3 232.8 C 336.4 232.8, 336.4 226.8, 345.5 226.8 C 354.5 226.8, 354.5 219.9, 363.6 219.9 C 372.7 219.9, 372.7 212.3, 381.8 212.3 C 390.9 212.3, 390.9 203.6, 400.0 203.6 C 409.1 203.6, 409.1 193.9, 418.2 193.9 C 427.3 193.9, 427.3 182.9, 436.4 182.9 C 445.5 182.9, 445.5 170.5, 454.5 170.5 C 463.6 170.5, 463.6 156.6, 472.7 156.6 C 481.8 156.6, 481.8 141.0, 490.9 141.0 C 500.0 141.0, 500.0 123.3, 509.1 123.3 C 518.2 123.3, 518.2 103.5, 527.3 103.5 C 536.4 103.5, 536.4 81.1, 545.5 81.1 C 554.5 81.1, 554.5 75.4, 563.6 75.4 C 572.7 75.4, 572.7 69.7, 581.8 69.7 C 590.9 69.7, 590.9 64.1, 600.0 64.1 C 609.1 64.1, 609.1 58.7, 618.2 58.7 C 627.3 58.7, 627.3 53.4, 636.4 53.4 C 645.5 53.4, 645.5 48.4, 654.5 48.4 C 663.6 48.4, 663.6 43.6, 672.7 43.6 C 681.8 43.6, 681.8 39.2, 690.9 39.2 C 700.0 39.2, 700.0 35.2, 709.1 35.2 C 718.2 35.2, 718.2 31.7, 727.3 31.7 C 736.4 31.7, 736.4 28.7, 745.5 28.7 C 754.5 28.7, 754.5 26.4, 763.6 26.4 C 772.7 26.4, 772.7 24.8, 781.8 24.8 C 790.9 24.8, 790.9 24.0, 800.0 24.0 C 809.1 24.0, 809.1 24.2, 818.2 24.2 C 827.3 24.2, 827.3 25.5, 836.4 25.5 C 845.5 25.5, 845.5 28.0, 854.5 28.0 C 863.6 28.0, 863.6 31.8, 872.7 31.8 C 881.8 31.8, 881.8 37.2, 890.9 37.2 C 900.0 37.2, 900.0 44.4, 909.1 44.4 C 918.2 44.4, 918.2 53.5, 927.3 53.5 C 936.4 53.5, 936.4 64.7, 945.5 64.7 C 954.5 64.7, 954.5 78.3, 963.6 78.3 C 972.7 78.3, 972.7 94.6, 981.8 94.6 C 990.9 94.6, 990.9 113.8, 1000.0 113.8" fill="none" stroke="url(#futureStroke)" stroke-width="3.5" stroke-linecap="round"/>
+        <g class="future__milestone"><line x1="0.0" y1="275.2" x2="0.0" y2="276" stroke="#ffffff" stroke-opacity="0.25"/><circle cx="0.0" cy="275.2" r="4" fill="#fff"/><text x="0.0" y="296" fill="#ffffff" fill-opacity="0.65" font-size="13" text-anchor="middle">30</text></g><g class="future__milestone"><line x1="181.8" y1="262.3" x2="181.8" y2="276" stroke="#ffffff" stroke-opacity="0.25"/><circle cx="181.8" cy="262.3" r="4" fill="#fff"/><text x="181.8" y="296" fill="#ffffff" fill-opacity="0.65" font-size="13" text-anchor="middle">40</text></g><g class="future__milestone"><line x1="363.6" y1="219.9" x2="363.6" y2="276" stroke="#ffffff" stroke-opacity="0.25"/><circle cx="363.6" cy="219.9" r="4" fill="#fff"/><text x="363.6" y="296" fill="#ffffff" fill-opacity="0.65" font-size="13" text-anchor="middle">50</text></g><g class="future__milestone"><line x1="545.5" y1="81.1" x2="545.5" y2="276" stroke="#ffffff" stroke-opacity="0.25"/><circle cx="545.5" cy="81.1" r="4" fill="#fff"/><text x="545.5" y="296" fill="#ffffff" fill-opacity="0.65" font-size="13" text-anchor="middle">60</text></g>
+      </svg>
+      <p class="future__assumption">At 12% assumed annual return &middot; an illustration, not a promise. Your plan updates this projection live.</p>
+    </div>
+  </section>
+  
+  <section class="compound" aria-labelledby="compound-title">
+    <div class="container compound__inner">
+      <div class="compound__copy">
+        <p class="eyebrow">Compounding</p>
+        <h2 id="compound-title" class="section-title">Small decisions compound.</h2>
+        <p class="group__note">Move the sliders and watch the shape change. The maths is the same one behind the SIP calculator.</p>
+        <div class="compound__controls">
+          <label class="compound__control">
+            <span>Monthly investment</span>
+            <output data-comp-monthly-out>₹25,000</output>
+            <input type="range" min="500" max="100000" step="500" value="25000" data-comp-monthly aria-label="Monthly investment">
+          </label>
+          <label class="compound__control">
+            <span>Years</span>
+            <output data-comp-years-out>30</output>
+            <input type="range" min="1" max="40" step="1" value="30" data-comp-years aria-label="Years">
+          </label>
+          <label class="compound__control">
+            <span>Expected return</span>
+            <output data-comp-rate-out>12%</output>
+            <input type="range" min="1" max="20" step="0.5" value="12" data-comp-rate aria-label="Expected annual return">
+          </label>
+        </div>
+        <dl class="compound__output">
+          <div><dt>Total invested</dt><dd data-comp-invested>₹90,00,000</dd></div>
+          <div><dt>Estimated growth</dt><dd data-comp-growth>₹7,92,47,844</dd></div>
+          <div class="compound__final"><dt>Final value</dt><dd data-comp-final>₹8,82,47,844</dd></div>
+        </dl>
+      </div>
+      <div class="compound__viz">
+        <svg viewBox="0 0 560 320" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
+          <defs><linearGradient id="cpFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#159570" stop-opacity="0.42"/><stop offset="1" stop-color="#2563EB" stop-opacity="0"/></linearGradient>
+            <linearGradient id="cpStroke" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#159570"/><stop offset="1" stop-color="#2563EB"/></linearGradient></defs>
+          <path class="compound__area" data-comp-area d="M 0.0 300.0 C 9.3 300.0, 9.3 299.1, 18.7 299.1 C 28.0 299.1, 28.0 298.0, 37.3 298.0 C 46.7 298.0, 46.7 296.8, 56.0 296.8 C 65.3 296.8, 65.3 295.4, 74.7 295.4 C 84.0 295.4, 84.0 293.9, 93.3 293.9 C 102.7 293.9, 102.7 292.2, 112.0 292.2 C 121.3 292.2, 121.3 290.3, 130.7 290.3 C 140.0 290.3, 140.0 288.1, 149.3 288.1 C 158.7 288.1, 158.7 285.7, 168.0 285.7 C 177.3 285.7, 177.3 282.9, 186.7 282.9 C 196.0 282.9, 196.0 279.8, 205.3 279.8 C 214.7 279.8, 214.7 276.3, 224.0 276.3 C 233.3 276.3, 233.3 272.3, 242.7 272.3 C 252.0 272.3, 252.0 267.9, 261.3 267.9 C 270.7 267.9, 270.7 262.8, 280.0 262.8 C 289.3 262.8, 289.3 257.2, 298.7 257.2 C 308.0 257.2, 308.0 250.8, 317.3 250.8 C 326.7 250.8, 326.7 243.6, 336.0 243.6 C 345.3 243.6, 345.3 235.5, 354.7 235.5 C 364.0 235.5, 364.0 226.4, 373.3 226.4 C 382.7 226.4, 382.7 216.1, 392.0 216.1 C 401.3 216.1, 401.3 204.5, 410.7 204.5 C 420.0 204.5, 420.0 191.5, 429.3 191.5 C 438.7 191.5, 438.7 176.8, 448.0 176.8 C 457.3 176.8, 457.3 160.2, 466.7 160.2 C 476.0 160.2, 476.0 141.6, 485.3 141.6 C 494.7 141.6, 494.7 120.5, 504.0 120.5 C 513.3 120.5, 513.3 96.8, 522.7 96.8 C 532.0 96.8, 532.0 70.1, 541.3 70.1 C 550.7 70.1, 550.7 40.0, 560.0 40.0 L 560 320 L 0 320 Z" fill="url(#cpFill)"/>
+          <path class="compound__line" data-comp-line d="M 0.0 300.0 C 9.3 300.0, 9.3 299.1, 18.7 299.1 C 28.0 299.1, 28.0 298.0, 37.3 298.0 C 46.7 298.0, 46.7 296.8, 56.0 296.8 C 65.3 296.8, 65.3 295.4, 74.7 295.4 C 84.0 295.4, 84.0 293.9, 93.3 293.9 C 102.7 293.9, 102.7 292.2, 112.0 292.2 C 121.3 292.2, 121.3 290.3, 130.7 290.3 C 140.0 290.3, 140.0 288.1, 149.3 288.1 C 158.7 288.1, 158.7 285.7, 168.0 285.7 C 177.3 285.7, 177.3 282.9, 186.7 282.9 C 196.0 282.9, 196.0 279.8, 205.3 279.8 C 214.7 279.8, 214.7 276.3, 224.0 276.3 C 233.3 276.3, 233.3 272.3, 242.7 272.3 C 252.0 272.3, 252.0 267.9, 261.3 267.9 C 270.7 267.9, 270.7 262.8, 280.0 262.8 C 289.3 262.8, 289.3 257.2, 298.7 257.2 C 308.0 257.2, 308.0 250.8, 317.3 250.8 C 326.7 250.8, 326.7 243.6, 336.0 243.6 C 345.3 243.6, 345.3 235.5, 354.7 235.5 C 364.0 235.5, 364.0 226.4, 373.3 226.4 C 382.7 226.4, 382.7 216.1, 392.0 216.1 C 401.3 216.1, 401.3 204.5, 410.7 204.5 C 420.0 204.5, 420.0 191.5, 429.3 191.5 C 438.7 191.5, 438.7 176.8, 448.0 176.8 C 457.3 176.8, 457.3 160.2, 466.7 160.2 C 476.0 160.2, 476.0 141.6, 485.3 141.6 C 494.7 141.6, 494.7 120.5, 504.0 120.5 C 513.3 120.5, 513.3 96.8, 522.7 96.8 C 532.0 96.8, 532.0 70.1, 541.3 70.1 C 550.7 70.1, 550.7 40.0, 560.0 40.0" fill="none" stroke="url(#cpStroke)" stroke-width="3"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+  
+  <section class="container answers" id="answers" aria-labelledby="answers-title">
+    <p class="eyebrow">Editorial</p>
+    <h2 id="answers-title" class="section-title">Questions worth answering.</h2>
+    <p class="group__note">Real numbers, plain language, no sign-up.</p>
+    <div class="answers__grid">
+      <a class="answers__feature" href="/how-much-sip-for-1-crore/">
+        <span class="answers__tag">Most asked</span>
+        <h3 class="answers__feature-title">How much SIP do you need for ₹1 crore?</h3>
+        <p class="answers__desc">See the monthly SIP needed to reach ₹1 crore in 10 to 30 years at 10%, 12% and 14% returns, plus how to read the numbers and plan the goal properly.</p>
+        <span class="answers__cta">Read the answer <span class="arrow" aria-hidden="true">&rarr;</span></span>
+      </a>
+      <div class="answers__list">
+        <a class="answers__item" href="/how-much-will-5000-sip-become/">
+          <span class="answers__item-title">How much will a ₹5,000 monthly SIP become?</span>
+          <span class="answers__item-go" aria-hidden="true">&rarr;</span>
+        </a><a class="answers__item" href="/sip-vs-lumpsum/">
+          <span class="answers__item-title">SIP vs lump sum: which invests better?</span>
+          <span class="answers__item-go" aria-hidden="true">&rarr;</span>
+        </a><a class="answers__item" href="/how-much-will-10000-sip-become/">
+          <span class="answers__item-title">How much will a ₹10,000 monthly SIP become?</span>
+          <span class="answers__item-go" aria-hidden="true">&rarr;</span>
+        </a><a class="answers__item" href="/how-to-reach-1-crore/">
+          <span class="answers__item-title">How to reach ₹1 crore: three routes</span>
+          <span class="answers__item-go" aria-hidden="true">&rarr;</span>
+        </a><a class="answers__item" href="/how-to-reach-50-lakh/">
+          <span class="answers__item-title">How to reach ₹50 lakh: three routes</span>
+          <span class="answers__item-go" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="container tools-strip" aria-labelledby="tools-title">
+    <p class="eyebrow">Planners</p>
+    <h2 id="tools-title" class="section-title">More ways to plan &amp; decide</h2>
+    <p class="group__note">Each planner starts from your numbers and ends with an action you can take.</p>
+    <div class="grid-cards">
+      <a class="calc-card calc-card--tool" href="/money-plan/">
+        <div class="calc-card__top">
+          <span class="calc-card__icon" aria-hidden="true">PM</span>
+          <span class="calc-card__tag">Planner</span>
+        </div>
+        <h3 class="calc-card__name">I want a plan for my money</h3>
+        <p class="calc-card__desc">Turn your seven numbers into one ordered, dated action plan - and track it.</p>
+        <div class="calc-card__footer"><span class="calc-card__cta">Open planner</span></div>
+      </a><a class="calc-card calc-card--tool" href="/compare-decisions/">
+        <div class="calc-card__top">
+          <span class="calc-card__icon" aria-hidden="true">DC</span>
+          <span class="calc-card__tag">Planner</span>
+        </div>
+        <h3 class="calc-card__name">Help me choose between two options</h3>
+        <p class="calc-card__desc">Compare paying off debt vs investing, or an equity SIP vs a fixed deposit.</p>
+        <div class="calc-card__footer"><span class="calc-card__cta">Open planner</span></div>
+      </a><a class="calc-card calc-card--tool" href="/monthly-review/">
+        <div class="calc-card__top">
+          <span class="calc-card__icon" aria-hidden="true">MR</span>
+          <span class="calc-card__tag">Planner</span>
+        </div>
+        <h3 class="calc-card__name">Keep my plan on track</h3>
+        <p class="calc-card__desc">A five-minute monthly check-in that logs your progress over time.</p>
+        <div class="calc-card__footer"><span class="calc-card__cta">Open planner</span></div>
+      </a><a class="calc-card calc-card--tool" href="/plan-report/">
+        <div class="calc-card__top">
+          <span class="calc-card__icon" aria-hidden="true">FR</span>
+          <span class="calc-card__tag">Planner</span>
+        </div>
+        <h3 class="calc-card__name">Give me a written report</h3>
+        <p class="calc-card__desc">A printable report of your position, plan, milestones and goals.</p>
+        <div class="calc-card__footer"><span class="calc-card__cta">Open planner</span></div>
+      </a><a class="calc-card calc-card--tool" href="/dashboard/">
+        <div class="calc-card__top">
+          <span class="calc-card__icon" aria-hidden="true">FH</span>
+          <span class="calc-card__tag">Planner</span>
+        </div>
+        <h3 class="calc-card__name">How am I doing financially?</h3>
+        <p class="calc-card__desc">See your savings, debt, emergency fund and progress in one place.</p>
+        <div class="calc-card__footer"><span class="calc-card__cta">Open planner</span></div>
+      </a><a class="calc-card calc-card--tool" href="/goal-planner/">
+        <div class="calc-card__top">
+          <span class="calc-card__icon" aria-hidden="true">GP</span>
+          <span class="calc-card__tag">Planner</span>
+        </div>
+        <h3 class="calc-card__name">I have a goal to reach</h3>
+        <p class="calc-card__desc">Find out how much you need to invest each month to get there.</p>
+        <div class="calc-card__footer"><span class="calc-card__cta">Open planner</span></div>
+      </a><a class="calc-card calc-card--tool" href="/retirement-planner/">
+        <div class="calc-card__top">
+          <span class="calc-card__icon" aria-hidden="true">RP</span>
+          <span class="calc-card__tag">Planner</span>
+        </div>
+        <h3 class="calc-card__name">Can I retire when I want to?</h3>
+        <p class="calc-card__desc">Work out your retirement number and the monthly saving to get there.</p>
+        <div class="calc-card__footer"><span class="calc-card__cta">Open planner</span></div>
+      </a><a class="calc-card calc-card--tool" href="/sip-compare/">
+        <div class="calc-card__top">
+          <span class="calc-card__icon" aria-hidden="true">SS</span>
+          <span class="calc-card__tag">Planner</span>
+        </div>
+        <h3 class="calc-card__name">Make my SIP better</h3>
+        <p class="calc-card__desc">See how increasing your SIP or adding a yearly step-up changes your future wealth.</p>
+        <div class="calc-card__footer"><span class="calc-card__cta">Open planner</span></div>
+      </a><a class="calc-card calc-card--tool" href="/what-if-lab/">
+        <div class="calc-card__top">
+          <span class="calc-card__icon" aria-hidden="true">WI</span>
+          <span class="calc-card__tag">Planner</span>
+        </div>
+        <h3 class="calc-card__name">What happens if...?</h3>
+        <p class="calc-card__desc">Try different returns, SIP amounts, pauses and lump sums.</p>
+        <div class="calc-card__footer"><span class="calc-card__cta">Open planner</span></div>
+      </a><a class="calc-card calc-card--tool" href="/debt-planner/">
+        <div class="calc-card__top">
+          <span class="calc-card__icon" aria-hidden="true">DP</span>
+          <span class="calc-card__tag">Planner</span>
+        </div>
+        <h3 class="calc-card__name">When will I be debt-free?</h3>
+        <p class="calc-card__desc">See your payoff timeline and what extra payments save you.</p>
+        <div class="calc-card__footer"><span class="calc-card__cta">Open planner</span></div>
+      </a><a class="calc-card calc-card--tool" href="/emergency-fund-planner/">
+        <div class="calc-card__top">
+          <span class="calc-card__icon" aria-hidden="true">EF</span>
+          <span class="calc-card__tag">Planner</span>
+        </div>
+        <h3 class="calc-card__name">How big should my safety net be?</h3>
+        <p class="calc-card__desc">Set your emergency fund target and the months needed to fill it.</p>
+        <div class="calc-card__footer"><span class="calc-card__cta">Open planner</span></div>
+      </a><a class="calc-card calc-card--tool" href="/net-worth-tracker/">
+        <div class="calc-card__top">
+          <span class="calc-card__icon" aria-hidden="true">NW</span>
+          <span class="calc-card__tag">Planner</span>
+        </div>
+        <h3 class="calc-card__name">What is my net worth?</h3>
+        <p class="calc-card__desc">Add assets and debts, then watch the trend over time.</p>
+        <div class="calc-card__footer"><span class="calc-card__cta">Open planner</span></div>
+      </a><a class="calc-card calc-card--tool" href="/savings-planner/">
+        <div class="calc-card__top">
+          <span class="calc-card__icon" aria-hidden="true">SP</span>
+          <span class="calc-card__tag">Planner</span>
+        </div>
+        <h3 class="calc-card__name">Save more each month</h3>
+        <p class="calc-card__desc">Find your surplus and see what saving a little more is really worth.</p>
+        <div class="calc-card__footer"><span class="calc-card__cta">Open planner</span></div>
+      </a>
+    </div>
+  </section>
+  
+  <section class="container directory" id="calculators" aria-labelledby="calc-dir-title">
+    <p class="eyebrow">The toolkit</p>
+    <h2 id="calc-dir-title" class="section-title">Every calculator, in its place.</h2>
+    <p class="group__note">33 free tools across 8 areas - each one shows its formula and assumptions.</p>
+    <div class="search search--editorial"><input data-home-search type="search" placeholder="Search calculators - SIP, EMI, CAGR, retirement, GST…" aria-label="Search calculators"></div>
+    <p class="group__note" data-search-empty hidden>No calculators match your search. Try "SIP", "loan" or "tax".</p>
+    <div class="directory__groups">
+      <section class="dir-group" data-calc-group id="investment">
+        <div class="dir-group__head">
+          <h3 class="dir-group__title">Invest</h3>
+          <p class="dir-group__note">Grow money over time.</p>
+          <span class="dir-group__count">10</span>
+        </div>
+        <div class="dir-group__list">
+    <a class="dir-item" data-calc-card data-name="SIP Calculator" data-desc="See the future value of monthly SIPs with total invested, estimated returns and annual step-up. Accurate annuity-due mat" data-tags="sip SIP Calculator investment calculators" href="/sip/">
+      <span class="dir-item__name">SIP Calculator</span>
+      <span class="dir-item__flags"><span class="badge-pop">Popular</span></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="dir-item" data-calc-card data-name="Lump Sum Calculator" data-desc="See what a one-time investment grows to. Future value, total returns and ROI for a lump sum invested at a chosen annual " data-tags="lump sum Lump Sum Calculator investment calculators" href="/lump-sum/">
+      <span class="dir-item__name">Lump Sum Calculator</span>
+      <span class="dir-item__flags"></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="dir-item" data-calc-card data-name="Compound Interest Calculator" data-desc="Calculate compound interest with yearly, quarterly or monthly compounding plus optional monthly additions. See the final" data-tags="compound interest Compound Interest Calculator investment calculators" href="/compound-interest/">
+      <span class="dir-item__name">Compound Interest Calculator</span>
+      <span class="dir-item__flags"><span class="badge-pop">Popular</span></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="dir-item" data-calc-card data-name="Investment Return Calculator" data-desc="Calculate the absolute return and ROI of an investment, with CAGR when there are no periodic deposits. Understand what y" data-tags="investment return Investment Return Calculator investment calculators" href="/investment-return/">
+      <span class="dir-item__name">Investment Return Calculator</span>
+      <span class="dir-item__flags"></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="dir-item" data-calc-card data-name="CAGR Calculator" data-desc="Calculate the compound annual growth rate of an investment from beginning value, ending value and years. Compare any ass" data-tags="cagr CAGR Calculator investment calculators" href="/cagr/">
+      <span class="dir-item__name">CAGR Calculator</span>
+      <span class="dir-item__flags"><span class="badge-pop">Popular</span></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="dir-item" data-calc-card data-name="Real Return Calculator" data-desc="Find your real, inflation-adjusted return. Enter nominal return and inflation to see how much purchasing power you actua" data-tags="real return Real Return Calculator investment calculators" href="/real-return/">
+      <span class="dir-item__name">Real Return Calculator</span>
+      <span class="dir-item__flags"></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="dir-item" data-calc-card data-name="Expense Ratio Impact Calculator" data-desc="See how a fund expense ratio compounds against your returns. Compare growth with and without fees over your investment h" data-tags="expense ratio Expense Ratio Impact Calculator investment calculators" href="/expense-ratio/">
+      <span class="dir-item__name">Expense Ratio Impact Calculator</span>
+      <span class="dir-item__flags"></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="dir-item" data-calc-card data-name="SWP Calculator" data-desc="Estimate the monthly income a corpus can pay under a systematic withdrawal plan, with withdrawals that grow each year." data-tags="swp SWP Calculator investment calculators" href="/swp/">
+      <span class="dir-item__name">SWP Calculator</span>
+      <span class="dir-item__flags"><span class="badge-pop">Popular</span></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="dir-item" data-calc-card data-name="XIRR Calculator" data-desc="Work out the annualised return (XIRR) implied by regular monthly investments and a final value, the way fund statements " data-tags="xirr XIRR Calculator investment calculators" href="/xirr/">
+      <span class="dir-item__name">XIRR Calculator</span>
+      <span class="dir-item__flags"></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="dir-item" data-calc-card data-name="STP Calculator" data-desc="Model a systematic transfer plan: move a lump sum from a source fund into a target fund in monthly tranches and see the " data-tags="stp STP Calculator investment calculators" href="/stp/">
+      <span class="dir-item__name">STP Calculator</span>
+      <span class="dir-item__flags"></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a></div>
+      </section>
+      <section class="dir-group" data-calc-group id="loan">
+        <div class="dir-group__head">
+          <h3 class="dir-group__title">Borrow</h3>
+          <p class="dir-group__note">Borrow with your eyes open.</p>
+          <span class="dir-group__count">06</span>
+        </div>
+        <div class="dir-group__list">
+    <a class="dir-item" data-calc-card data-name="EMI / Loan Calculator" data-desc="Calculate monthly EMI for a loan with interest rate and tenure. See total payment, total interest and a year-by-year pri" data-tags="emi loan EMI / Loan Calculator loan calculators" href="/emi-loan/">
+      <span class="dir-item__name">EMI / Loan Calculator</span>
+      <span class="dir-item__flags"><span class="badge-pop">Popular</span></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="dir-item" data-calc-card data-name="Mortgage Calculator" data-desc="Estimate your true monthly housing cost: mortgage payment plus property tax and insurance. See the loan amount after dow" data-tags="mortgage Mortgage Calculator loan calculators" href="/mortgage/">
+      <span class="dir-item__name">Mortgage Calculator</span>
+      <span class="dir-item__flags"></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="dir-item" data-calc-card data-name="Home Loan Prepayment Calculator" data-desc="See how much interest a one-time home loan prepayment saves and how many months earlier the loan closes, keeping the EMI" data-tags="home loan prepay Home Loan Prepayment Calculator loan calculators" href="/home-loan-prepay/">
+      <span class="dir-item__name">Home Loan Prepayment Calculator</span>
+      <span class="dir-item__flags"></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="dir-item" data-calc-card data-name="Loan Comparison Calculator" data-desc="Compare two loan offers side by side: monthly EMI, total interest and outstanding balance over time, so you choose on to" data-tags="loan compare Loan Comparison Calculator loan calculators" href="/loan-compare/">
+      <span class="dir-item__name">Loan Comparison Calculator</span>
+      <span class="dir-item__flags"></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="dir-item" data-calc-card data-name="Debt Payoff Calculator" data-desc="See how long a debt takes to clear at your monthly payment, how much interest you pay, and how an extra payment speeds i" data-tags="debt payoff Debt Payoff Calculator loan calculators" href="/debt-payoff/">
+      <span class="dir-item__name">Debt Payoff Calculator</span>
+      <span class="dir-item__flags"></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="dir-item" data-calc-card data-name="Credit Card Interest Calculator" data-desc="See what a revolving credit card balance costs in interest over a chosen number of months, with daily compounding." data-tags="credit card interest Credit Card Interest Calculator loan calculators" href="/credit-card-interest/">
+      <span class="dir-item__name">Credit Card Interest Calculator</span>
+      <span class="dir-item__flags"></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a></div>
+      </section>
+      <section class="dir-group" data-calc-group id="retirement">
+        <div class="dir-group__head">
+          <h3 class="dir-group__title">Plan</h3>
+          <p class="dir-group__note">Plan the long horizon.</p>
+          <span class="dir-group__count">04</span>
+        </div>
+        <div class="dir-group__list">
+    <a class="dir-item" data-calc-card data-name="Retirement Calculator" data-desc="Find the retirement corpus you need, what your savings will grow to, and the monthly SIP that closes the gap - inflation" data-tags="retirement Retirement Calculator retirement &amp; goals" href="/retirement/">
+      <span class="dir-item__name">Retirement Calculator</span>
+      <span class="dir-item__flags"><span class="badge-pop">Popular</span></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="dir-item" data-calc-card data-name="Savings Goal Calculator" data-desc="Find out how long it takes to reach a savings goal with monthly deposits and expected return, starting from what you hav" data-tags="savings goal Savings Goal Calculator retirement &amp; goals" href="/savings-goal/">
+      <span class="dir-item__name">Savings Goal Calculator</span>
+      <span class="dir-item__flags"></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="dir-item" data-calc-card data-name="FIRE Calculator" data-desc="Find your FI number from annual expenses and a safe withdrawal rate, and see how many years of saving it takes to reach " data-tags="fire FIRE Calculator retirement &amp; goals" href="/fire/">
+      <span class="dir-item__name">FIRE Calculator</span>
+      <span class="dir-item__flags"><span class="badge-pop">Popular</span></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="dir-item" data-calc-card data-name="Coast FIRE Calculator" data-desc="Find your Coast FIRE age: the point where your existing corpus can grow to your target on its own, with no further contr" data-tags="coast fire Coast FIRE Calculator retirement &amp; goals" href="/coast-fire/">
+      <span class="dir-item__name">Coast FIRE Calculator</span>
+      <span class="dir-item__flags"></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a></div>
+      </section>
+      <section class="dir-group" data-calc-group id="savings">
+        <div class="dir-group__head">
+          <h3 class="dir-group__title">Save</h3>
+          <p class="dir-group__note">Safe, steady, predictable.</p>
+          <span class="dir-group__count">04</span>
+        </div>
+        <div class="dir-group__list">
+    <a class="dir-item" data-calc-card data-name="FD Calculator" data-desc="Calculate fixed deposit maturity value and interest for a chosen deposit, rate and compounding frequency. Shows the effe" data-tags="fd FD Calculator savings calculators" href="/fd/">
+      <span class="dir-item__name">FD Calculator</span>
+      <span class="dir-item__flags"></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="dir-item" data-calc-card data-name="PPF Calculator" data-desc="Calculate your PPF maturity value, total deposits and tax-free interest for the 15-year (or extended) tenure at the curr" data-tags="ppf PPF Calculator savings calculators" href="/ppf/">
+      <span class="dir-item__name">PPF Calculator</span>
+      <span class="dir-item__flags"></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="dir-item" data-calc-card data-name="Recurring Deposit Calculator" data-desc="Calculate the maturity value of a recurring deposit: deposit monthly, see total deposited, interest earned and the final" data-tags="rd Recurring Deposit Calculator savings calculators" href="/rd/">
+      <span class="dir-item__name">Recurring Deposit Calculator</span>
+      <span class="dir-item__flags"></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="dir-item" data-calc-card data-name="Emergency Fund Calculator" data-desc="Work out your emergency fund target from monthly expenses and how many months it will take to build at your current savi" data-tags="emergency fund Emergency Fund Calculator savings calculators" href="/emergency-fund/">
+      <span class="dir-item__name">Emergency Fund Calculator</span>
+      <span class="dir-item__flags"></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a></div>
+      </section>
+      <section class="dir-group" data-calc-group id="tax">
+        <div class="dir-group__head">
+          <h3 class="dir-group__title">Tax</h3>
+          <p class="dir-group__note">What you actually keep.</p>
+          <span class="dir-group__count">04</span>
+        </div>
+        <div class="dir-group__list">
+    <a class="dir-item" data-calc-card data-name="GST / Tax Calculator" data-desc="Add GST to a net price or back it out of an inclusive total. Covers 0%, 5%, 12%, 18% and 28% slabs with instant net / ta" data-tags="gst tax GST / Tax Calculator tax &amp; inflation" href="/gst-tax/">
+      <span class="dir-item__name">GST / Tax Calculator</span>
+      <span class="dir-item__flags"><span class="badge-pop">Popular</span></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="dir-item" data-calc-card data-name="Inflation Calculator" data-desc="Calculate what today&#39;s money will cost in the future, or what a future amount is worth today. Inflation-adjusted purchas" data-tags="inflation Inflation Calculator tax &amp; inflation" href="/inflation/">
+      <span class="dir-item__name">Inflation Calculator</span>
+      <span class="dir-item__flags"><span class="badge-pop">Popular</span></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="dir-item" data-calc-card data-name="Income Tax Calculator (India)" data-desc="Estimate your Indian income tax under the new and old regimes with the standard deduction and 4% cess, for FY 2024-25." data-tags="income tax Income Tax Calculator (India) tax &amp; inflation" href="/income-tax/">
+      <span class="dir-item__name">Income Tax Calculator (India)</span>
+      <span class="dir-item__flags"><span class="badge-pop">Popular</span></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="dir-item" data-calc-card data-name="Capital Gains Calculator (India)" data-desc="Estimate Indian equity capital gains tax: 20% on short-term gains and 12.5% on long-term gains above the 1.25 lakh exemp" data-tags="capital gains Capital Gains Calculator (India) tax &amp; inflation" href="/capital-gains/">
+      <span class="dir-item__name">Capital Gains Calculator (India)</span>
+      <span class="dir-item__flags"></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a></div>
+      </section>
+      <section class="dir-group" data-calc-group id="trading">
+        <div class="dir-group__head">
+          <h3 class="dir-group__title">Trade</h3>
+          <p class="dir-group__note">Size the risk before the trade.</p>
+          <span class="dir-group__count">03</span>
+        </div>
+        <div class="dir-group__list">
+    <a class="dir-item" data-calc-card data-name="Stock Position Size Calculator" data-desc="Calculate how many shares to buy based on your account balance, risk per trade and stop-loss distance. Protect your capi" data-tags="position size Stock Position Size Calculator stock &amp; trading" href="/position-size/">
+      <span class="dir-item__name">Stock Position Size Calculator</span>
+      <span class="dir-item__flags"><span class="badge-pop">Popular</span></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="dir-item" data-calc-card data-name="Risk/Reward Calculator" data-desc="Calculate the risk/reward ratio of any trade setup from entry, stop-loss and target. Optionally include quantity for rup" data-tags="risk reward Risk/Reward Calculator stock &amp; trading" href="/risk-reward/">
+      <span class="dir-item__name">Risk/Reward Calculator</span>
+      <span class="dir-item__flags"></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="dir-item" data-calc-card data-name="Profit &amp; Loss Calculator" data-desc="Calculate the profit or loss of a trade including buy and sell fees. See cost, proceeds and your return percentage for a" data-tags="profit loss Profit &amp; Loss Calculator stock &amp; trading" href="/profit-loss/">
+      <span class="dir-item__name">Profit &amp; Loss Calculator</span>
+      <span class="dir-item__flags"></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a></div>
+      </section>
+      <section class="dir-group" data-calc-group id="personal">
+        <div class="dir-group__head">
+          <h3 class="dir-group__title">Personal</h3>
+          <p class="dir-group__note">Your whole financial position.</p>
+          <span class="dir-group__count">01</span>
+        </div>
+        <div class="dir-group__list">
+    <a class="dir-item" data-calc-card data-name="Net Worth Calculator" data-desc="Calculate your net worth: total assets minus total liabilities, with a visual breakdown of where your money sits." data-tags="net worth Net Worth Calculator personal finance" href="/net-worth/">
+      <span class="dir-item__name">Net Worth Calculator</span>
+      <span class="dir-item__flags"></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a></div>
+      </section>
+      <section class="dir-group" data-calc-group id="business">
+        <div class="dir-group__head">
+          <h3 class="dir-group__title">Business</h3>
+          <p class="dir-group__note">For advisers and creators.</p>
+          <span class="dir-group__count">01</span>
+        </div>
+        <div class="dir-group__list">
+    <a class="dir-item" data-calc-card data-name="Adviser ROI Calculator" data-desc="Estimate the time and money an adviser or finance team could save by replacing manual calculations and client reports wi" data-tags="adviser roi Adviser ROI Calculator business &amp; advisers" href="/adviser-roi/">
+      <span class="dir-item__name">Adviser ROI Calculator</span>
+      <span class="dir-item__flags"></span>
+      <span class="dir-item__go" aria-hidden="true">&rarr;</span>
+    </a></div>
+      </section></div></section>
+  <section class="recent" data-recent-section hidden aria-label="Recently viewed calculators">
+    <div class="container">
+      <h2>Recently viewed</h2>
+      <ul class="recent-chips" data-recent></ul>
+    </div>
+  </section>
+  <div class="container">
+    <section class="newsletter" aria-label="Newsletter signup">
+      <h3>One money tip, every Sunday</h3>
+      <p>Join subscribers who get a short, actionable finance insight each week. No spam, unsubscribe anytime.</p>
+      <form class="lead-form" data-lead-form data-lead-kind="newsletter" novalidate>
+        <input type="email" required placeholder="you@example.com" aria-label="Email address" data-lead-email>
+        <button type="submit">Subscribe</button>
+        <span class="lead-form__status" data-lead-status role="status" aria-live="polite"></span>
+      </form>
+    </section>
+  </div>
+  <script>window.FINHUB_PAGE = {"type":"home"};</script>
+</main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-statement">Your money.<br>Your next move.</p>
+      <div class="footer-inner">
+        <div class="footer-cols">
+          <div class="footer-brand">
+            <a class="logo" href="/"><span class="logo__mark">F</span><span class="logo__word">FinHub</span></a>
+            <p class="footer-blurb">Accurate, free and transparent finance calculators for investing, loans, retirement, savings and trading - built on published formulas with charts you can understand.</p>
+          </div>
+          <div>
+            <h4>Plan &amp; decide</h4>
+            <ul><li><a href="/money-plan/">I want a plan for my money</a></li><li><a href="/compare-decisions/">Help me choose between two options</a></li><li><a href="/monthly-review/">Keep my plan on track</a></li><li><a href="/plan-report/">Give me a written report</a></li><li><a href="/dashboard/">How am I doing financially?</a></li><li><a href="/goal-planner/">I have a goal to reach</a></li><li><a href="/retirement-planner/">Can I retire when I want to?</a></li><li><a href="/sip-compare/">Make my SIP better</a></li><li><a href="/what-if-lab/">What happens if...?</a></li><li><a href="/debt-planner/">When will I be debt-free?</a></li><li><a href="/emergency-fund-planner/">How big should my safety net be?</a></li><li><a href="/net-worth-tracker/">What is my net worth?</a></li><li><a href="/savings-planner/">Save more each month</a></li><li><a href="/my-plans/">My saved plans</a></li></ul>
+          </div>
+          <div>
+            <h4>Answers</h4>
+            <ul><li><a href="/how-much-sip-for-1-crore/">How much SIP do you need for ₹1 crore?</a></li><li><a href="/how-much-will-5000-sip-become/">How much will a ₹5,000 monthly SIP become?</a></li><li><a href="/sip-vs-lumpsum/">SIP vs lump sum: which invests better?</a></li><li><a href="/how-much-will-10000-sip-become/">How much will a ₹10,000 monthly SIP become?</a></li><li><a href="/how-to-reach-1-crore/">How to reach ₹1 crore: three routes</a></li><li><a href="/how-to-reach-50-lakh/">How to reach ₹50 lakh: three routes</a></li><li><a href="/sip-step-up-calculator/">SIP step-up calculator: how much does raising your SIP each year add?</a></li><li><a href="/inflation-adjusted-goal/">What will your goal cost after inflation?</a></li><li><a href="/emergency-fund-how-much/">How much emergency fund do you need?</a></li><li><a href="/savings-rate-calculator/">What does your savings rate do over time?</a></li><li><a href="/retirement-corpus-calculator/">How big a retirement corpus do you need?</a></li></ul>
+          </div>
+          <div>
+            <h4>Popular calculators</h4>
+            <ul><li><a href="/sip/">SIP Calculator</a></li><li><a href="/compound-interest/">Compound Interest Calculator</a></li><li><a href="/emi-loan/">EMI / Loan Calculator</a></li><li><a href="/retirement/">Retirement Calculator</a></li><li><a href="/fd/">FD Calculator</a></li><li><a href="/cagr/">CAGR Calculator</a></li></ul>
+          </div>
+          <div>
+            <h4>Browse by topic</h4>
+            <ul><li><a href="/#investment">Investment Calculators</a></li><li><a href="/#loan">Loan Calculators</a></li><li><a href="/#retirement">Retirement &amp; Goals</a></li><li><a href="/#savings">Savings Calculators</a></li><li><a href="/#tax">Tax &amp; Inflation</a></li><li><a href="/#trading">Stock &amp; Trading</a></li><li><a href="/#personal">Personal Finance</a></li><li><a href="/#business">Business &amp; Advisers</a></li></ul>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <ul>
+              <li><a href="/about/">About</a></li>
+              <li><a href="/how-it-works/">How it works</a></li>
+              <li><a href="/trust/">Trust &amp; security</a></li>
+              <li><a href="/support/">Support</a></li>
+              <li><a href="/privacy/">Privacy</a></li>
+              <li><a href="/terms/">Terms</a></li>
+              <li><a href="/sell/">For advisers</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer-adviser"><a href="/sell/">Are you an adviser or creator? Get this whole platform branded for your clients &rarr;</a></p>
+      </div>
+      <div class="footer-bottom">
+        <p>FinHub provides educational estimates for personal finance planning. Nothing here is financial, investment or tax advice. Figures are projections at the assumptions you choose and may not reflect actual returns or tax rules.</p>
+        <p>&copy; 2026 FinHub Tools. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cmdk" data-cmdk hidden>
+    <div class="cmdk__backdrop" data-cmdk-close></div>
+    <div class="cmdk__panel" role="dialog" aria-modal="true" aria-label="Search FinHub">
+      <div class="cmdk__field">
+        <svg class="cmdk__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
+        <input class="cmdk__input" data-cmdk-input type="text" role="combobox" aria-expanded="true" aria-controls="cmdk-list" aria-autocomplete="list" placeholder="Search calculators, planners and answers…" autocomplete="off" spellcheck="false">
+        <button type="button" class="cmdk__esc" data-cmdk-close aria-label="Close search">Esc</button>
+      </div>
+      <ul class="cmdk__list" data-cmdk-list id="cmdk-list" role="listbox" aria-label="Search results"></ul>
+      <div class="cmdk__foot" aria-hidden="true">
+        <span><kbd>&#8593;</kbd><kbd>&#8595;</kbd> move</span>
+        <span><kbd>&#8629;</kbd> open</span>
+        <span><kbd>esc</kbd> close</span>
+      </div>
+    </div>
+  </div>
+<script>window.FINHUB_INDEX = [{"t":"SIP Calculator","s":"/sip/","k":"Calculator","g":"Investment Calculators","d":"See the future value of monthly SIPs with total invested, estimated returns and annual step-up","w":"sip Investment Calculators"},{"t":"Lump Sum Calculator","s":"/lump-sum/","k":"Calculator","g":"Investment Calculators","d":"See what a one-time investment grows to","w":"lump sum Investment Calculators"},{"t":"Compound Interest Calculator","s":"/compound-interest/","k":"Calculator","g":"Investment Calculators","d":"Calculate compound interest with yearly, quarterly or monthly compounding plus optional monthly additions","w":"compound interest Investment Calculators"},{"t":"EMI / Loan Calculator","s":"/emi-loan/","k":"Calculator","g":"Loan Calculators","d":"Calculate monthly EMI for a loan with interest rate and tenure","w":"emi loan Loan Calculators"},{"t":"Mortgage Calculator","s":"/mortgage/","k":"Calculator","g":"Loan Calculators","d":"Estimate your true monthly housing cost: mortgage payment plus property tax and insurance","w":"mortgage Loan Calculators"},{"t":"Retirement Calculator","s":"/retirement/","k":"Calculator","g":"Retirement & Goals","d":"Find the retirement corpus you need, what your savings will grow to, and the monthly SIP that closes the gap - inflation-adjusted income model","w":"retirement Retirement & Goals"},{"t":"FD Calculator","s":"/fd/","k":"Calculator","g":"Savings Calculators","d":"Calculate fixed deposit maturity value and interest for a chosen deposit, rate and compounding frequency","w":"fd Savings Calculators"},{"t":"PPF Calculator","s":"/ppf/","k":"Calculator","g":"Savings Calculators","d":"Calculate your PPF maturity value, total deposits and tax-free interest for the 15-year (or extended) tenure at the current PPF rate","w":"ppf Savings Calculators"},{"t":"GST / Tax Calculator","s":"/gst-tax/","k":"Calculator","g":"Tax & Inflation","d":"Add GST to a net price or back it out of an inclusive total","w":"gst tax Tax & Inflation"},{"t":"Inflation Calculator","s":"/inflation/","k":"Calculator","g":"Tax & Inflation","d":"Calculate what today's money will cost in the future, or what a future amount is worth today","w":"inflation Tax & Inflation"},{"t":"Investment Return Calculator","s":"/investment-return/","k":"Calculator","g":"Investment Calculators","d":"Calculate the absolute return and ROI of an investment, with CAGR when there are no periodic deposits","w":"investment return Investment Calculators"},{"t":"CAGR Calculator","s":"/cagr/","k":"Calculator","g":"Investment Calculators","d":"Calculate the compound annual growth rate of an investment from beginning value, ending value and years","w":"cagr Investment Calculators"},{"t":"Stock Position Size Calculator","s":"/position-size/","k":"Calculator","g":"Stock & Trading","d":"Calculate how many shares to buy based on your account balance, risk per trade and stop-loss distance","w":"position size Stock & Trading"},{"t":"Risk/Reward Calculator","s":"/risk-reward/","k":"Calculator","g":"Stock & Trading","d":"Calculate the risk/reward ratio of any trade setup from entry, stop-loss and target","w":"risk reward Stock & Trading"},{"t":"Profit & Loss Calculator","s":"/profit-loss/","k":"Calculator","g":"Stock & Trading","d":"Calculate the profit or loss of a trade including buy and sell fees","w":"profit loss Stock & Trading"},{"t":"Savings Goal Calculator","s":"/savings-goal/","k":"Calculator","g":"Retirement & Goals","d":"Find out how long it takes to reach a savings goal with monthly deposits and expected return, starting from what you have saved already","w":"savings goal Retirement & Goals"},{"t":"Net Worth Calculator","s":"/net-worth/","k":"Calculator","g":"Personal Finance","d":"Calculate your net worth: total assets minus total liabilities, with a visual breakdown of where your money sits","w":"net worth Personal Finance"},{"t":"Real Return Calculator","s":"/real-return/","k":"Calculator","g":"Investment Calculators","d":"Find your real, inflation-adjusted return","w":"real return Investment Calculators"},{"t":"Expense Ratio Impact Calculator","s":"/expense-ratio/","k":"Calculator","g":"Investment Calculators","d":"See how a fund expense ratio compounds against your returns","w":"expense ratio Investment Calculators"},{"t":"SWP Calculator","s":"/swp/","k":"Calculator","g":"Investment Calculators","d":"Estimate the monthly income a corpus can pay under a systematic withdrawal plan, with withdrawals that grow each year","w":"swp Investment Calculators"},{"t":"XIRR Calculator","s":"/xirr/","k":"Calculator","g":"Investment Calculators","d":"Work out the annualised return (XIRR) implied by regular monthly investments and a final value, the way fund statements report it","w":"xirr Investment Calculators"},{"t":"STP Calculator","s":"/stp/","k":"Calculator","g":"Investment Calculators","d":"Model a systematic transfer plan: move a lump sum from a source fund into a target fund in monthly tranches and see the final value","w":"stp Investment Calculators"},{"t":"Home Loan Prepayment Calculator","s":"/home-loan-prepay/","k":"Calculator","g":"Loan Calculators","d":"See how much interest a one-time home loan prepayment saves and how many months earlier the loan closes, keeping the EMI unchanged","w":"home loan prepay Loan Calculators"},{"t":"Loan Comparison Calculator","s":"/loan-compare/","k":"Calculator","g":"Loan Calculators","d":"Compare two loan offers side by side: monthly EMI, total interest and outstanding balance over time, so you choose on total cost, not just the rate","w":"loan compare Loan Calculators"},{"t":"Debt Payoff Calculator","s":"/debt-payoff/","k":"Calculator","g":"Loan Calculators","d":"See how long a debt takes to clear at your monthly payment, how much interest you pay, and how an extra payment speeds it up","w":"debt payoff Loan Calculators"},{"t":"Credit Card Interest Calculator","s":"/credit-card-interest/","k":"Calculator","g":"Loan Calculators","d":"See what a revolving credit card balance costs in interest over a chosen number of months, with daily compounding","w":"credit card interest Loan Calculators"},{"t":"Recurring Deposit Calculator","s":"/rd/","k":"Calculator","g":"Savings Calculators","d":"Calculate the maturity value of a recurring deposit: deposit monthly, see total deposited, interest earned and the final amount","w":"rd Savings Calculators"},{"t":"Emergency Fund Calculator","s":"/emergency-fund/","k":"Calculator","g":"Savings Calculators","d":"Work out your emergency fund target from monthly expenses and how many months it will take to build at your current saving rate","w":"emergency fund Savings Calculators"},{"t":"FIRE Calculator","s":"/fire/","k":"Calculator","g":"Retirement & Goals","d":"Find your FI number from annual expenses and a safe withdrawal rate, and see how many years of saving it takes to reach financial independence","w":"fire Retirement & Goals"},{"t":"Coast FIRE Calculator","s":"/coast-fire/","k":"Calculator","g":"Retirement & Goals","d":"Find your Coast FIRE age: the point where your existing corpus can grow to your target on its own, with no further contributions","w":"coast fire Retirement & Goals"},{"t":"Income Tax Calculator (India)","s":"/income-tax/","k":"Calculator","g":"Tax & Inflation","d":"Estimate your Indian income tax under the new and old regimes with the standard deduction and 4% cess, for FY 2024-25","w":"income tax Tax & Inflation"},{"t":"Capital Gains Calculator (India)","s":"/capital-gains/","k":"Calculator","g":"Tax & Inflation","d":"Estimate Indian equity capital gains tax: 20% on short-term gains and 12","w":"capital gains Tax & Inflation"},{"t":"Adviser ROI Calculator","s":"/adviser-roi/","k":"Calculator","g":"Business & Advisers","d":"Estimate the time and money an adviser or finance team could save by replacing manual calculations and client reports with a platform","w":"adviser roi Business & Advisers"},{"t":"Personalized Money Plan","s":"/money-plan/","k":"Planner","g":"Plan & decide","d":"Your numbers become one ordered plan: safety net, debt, retirement and goals - with monthly amounts and milestones.","w":"money plan I want a plan for my money"},{"t":"Decision Comparisons","s":"/compare-decisions/","k":"Planner","g":"Plan & decide","d":"Put two real choices on the same axes - debt prepayment vs investing, or equity SIP vs a fixed deposit.","w":"compare decisions Help me choose between two options"},{"t":"Monthly Review","s":"/monthly-review/","k":"Planner","g":"Plan & decide","d":"Log a monthly check-in, compare it with last time, and keep the plan honest.","w":"monthly review Keep my plan on track"},{"t":"Financial Report","s":"/plan-report/","k":"Planner","g":"Plan & decide","d":"A clean, printable financial report built from your plan - print it or download the data.","w":"plan report Give me a written report"},{"t":"Financial Health Dashboard","s":"/dashboard/","k":"Planner","g":"Plan & decide","d":"See your savings rate, surplus, emergency fund, goal progress and health score in one place.","w":"dashboard How am I doing financially?"},{"t":"Goal Planner","s":"/goal-planner/","k":"Planner","g":"Plan & decide","d":"Turn a goal into a required monthly investment - and get a plan to close the gap.","w":"goal planner I have a goal to reach"},{"t":"Retirement Planner","s":"/retirement-planner/","k":"Planner","g":"Plan & decide","d":"Work out the corpus you need, the monthly saving to get there, and scenarios if you retire early or late.","w":"retirement planner Can I retire when I want to?"},{"t":"SIP Strategy Lab","s":"/sip-compare/","k":"Planner","g":"Plan & decide","d":"Compare flat SIP, step-up SIP and different amounts or timelines on one chart.","w":"sip compare Make my SIP better"},{"t":"What-If Lab","s":"/what-if-lab/","k":"Planner","g":"Plan & decide","d":"Test raise-the-SIP, step-up, lower returns, pauses and lump sums instantly.","w":"what if lab What happens if...?"},{"t":"Debt Payoff Planner","s":"/debt-planner/","k":"Planner","g":"Plan & decide","d":"Payoff timeline, total interest, and what extra payments save - avalanche vs snowball.","w":"debt planner When will I be debt-free?"},{"t":"Emergency Fund Planner","s":"/emergency-fund-planner/","k":"Planner","g":"Plan & decide","d":"Set the target, see your coverage and gap, and the months needed to fill it.","w":"emergency fund planner How big should my safety net be?"},{"t":"Net Worth Tracker","s":"/net-worth-tracker/","k":"Planner","g":"Plan & decide","d":"Add assets and liabilities, then save dated snapshots to see the trend over time.","w":"net worth tracker What is my net worth?"},{"t":"Savings Planner","s":"/savings-planner/","k":"Planner","g":"Plan & decide","d":"Find your monthly surplus and see what saving a little more is really worth.","w":"savings planner Save more each month"},{"t":"My Plans","s":"/my-plans/","k":"Planner","g":"Plan & decide","d":"Every plan you saved, on any device, ready to resume where you left off.","w":"my plans My saved plans"},{"t":"How much SIP do you need for ₹1 crore?","s":"/how-much-sip-for-1-crore/","k":"Answer","g":"Answers","d":"See the monthly SIP needed to reach ₹1 crore in 10 to 30 years at 10%, 12% and 14% returns, plus how to read the numbers and plan the goal properly.","w":"how much sip for 1 crore"},{"t":"How much will a ₹5,000 monthly SIP become?","s":"/how-much-will-5000-sip-become/","k":"Answer","g":"Answers","d":"See what a ₹5,000 monthly SIP grows to over 5, 10, 15, 20, 25 and 30 years at 8%, 10% and 12% returns, and how much of it is growth.","w":"how much will 5000 sip become"},{"t":"SIP vs lump sum: which invests better?","s":"/sip-vs-lumpsum/","k":"Answer","g":"Answers","d":"Compare investing the same ₹6 lakh as a lump sum today versus a ₹10,000 monthly SIP over 5 years at 8%, 10% and 12% returns, and understand the trade-off.","w":"sip vs lumpsum"},{"t":"How much will a ₹10,000 monthly SIP become?","s":"/how-much-will-10000-sip-become/","k":"Answer","g":"Answers","d":"See what a ₹10,000 monthly SIP grows to over 5, 10, 15, 20, 25 and 30 years at 8%, 10% and 12% returns, and how a 10% annual step-up changes it.","w":"how much will 10000 sip become"},{"t":"How to reach ₹1 crore: three routes","s":"/how-to-reach-1-crore/","k":"Answer","g":"Answers","d":"Three costed routes to a ₹1 crore target: a larger monthly SIP, a step-up SIP and a lump sum today, at 12% assumed return over 10 to 30 years.","w":"how to reach 1 crore"},{"t":"How to reach ₹50 lakh: three routes","s":"/how-to-reach-50-lakh/","k":"Answer","g":"Answers","d":"Three costed routes to a ₹50 lakh target: a flat monthly SIP, a step-up SIP and a lump sum today, at 12% assumed return over 5 to 30 years.","w":"how to reach 50 lakh"},{"t":"SIP step-up calculator: how much does raising your SIP each year add?","s":"/sip-step-up-calculator/","k":"Answer","g":"Answers","d":"See how a 5%, 10% or 15% annual SIP step-up changes a ₹10,000 monthly SIP over 10 to 30 years at 12%, and the step-up needed to hit ₹1 crore.","w":"sip step up calculator"},{"t":"What will your goal cost after inflation?","s":"/inflation-adjusted-goal/","k":"Answer","g":"Answers","d":"See how inflation raises the future cost of a goal: what ₹10, ₹25 and ₹50 lakh become in 10, 20 and 30 years at 5-7% inflation, and the SIP needed.","w":"inflation adjusted goal"},{"t":"How much emergency fund do you need?","s":"/emergency-fund-how-much/","k":"Answer","g":"Answers","d":"Work out your emergency fund target from essential monthly expenses and months of cover, and see how long it takes to build at different monthly savings.","w":"emergency fund how much"},{"t":"What does your savings rate do over time?","s":"/savings-rate-calculator/","k":"Answer","g":"Answers","d":"See what saving 10%, 20%, 30% or 40% of a ₹1 lakh income builds over 10 to 30 years at 12%, and why the savings rate matters more than the return.","w":"savings rate calculator"},{"t":"How big a retirement corpus do you need?","s":"/retirement-corpus-calculator/","k":"Answer","g":"Answers","d":"See the retirement corpus needed for different monthly expenses and retirement ages, and the monthly SIP to build it, at 6% inflation and 7-12% returns.","w":"retirement corpus calculator"},{"t":"About FinHub","s":"/about/","k":"Page","g":"FinHub","d":"FinHub is a free, transparent personal-finance calculator platform. Every tool shows its formula and assumptions, runs in your browser, and needs no sign-up.","w":"about"},{"t":"How the calculations work","s":"/how-it-works/","k":"Page","g":"FinHub","d":"The exact formulas and assumptions behind every FinHub calculator: annuity-due SIP maths, reducing-balance EMI, compound interest, inflation and retirement projections.","w":"how it works"},{"t":"Privacy","s":"/privacy/","k":"Page","g":"FinHub","d":"FinHub runs in your browser. No account, no upload of your figures, no sale of personal data. How the site handles your information.","w":"privacy"},{"t":"Terms of use","s":"/terms/","k":"Page","g":"FinHub","d":"Terms for using FinHub: educational estimates only, not financial advice, no warranty, and how optional advertising and partner links work.","w":"terms"},{"t":"Why you can trust this","s":"/trust/","k":"Page","g":"FinHub","d":"How FinHub handles your data, how every number is calculated, what we do not do, and how you stay in control. Runs entirely in your browser.","w":"trust"},{"t":"Support and contact","s":"/support/","k":"Page","g":"FinHub","d":"Contact FinHub, what to expect for response times, and answers on billing, refunds, data deletion and exporting your plans.","w":"support"}];</script>
+<script>window.FINHUB_LEADS = {"endpoint":"","email":"masterpol001@gmail.com","whatsapp":""};</script>
+
+<script type="module" src="/assets/js/app.js"></script>
+</body>
+</html>
